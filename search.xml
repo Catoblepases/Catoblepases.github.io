@@ -129,6 +129,12 @@
         <content type="html"><![CDATA[<h3 id="la-graph"><a href="#la-graph" class="headerlink" title="la graph"></a>la graph</h3><table><thead><tr><th>caractéristique</th><th style="text-align:left">soleil</th><th>mercure</th><th>vénus</th><th>terre</th><th style="text-align:left">Jupiter</th></tr></thead><tbody><tr><td>diamètre en km</td><td style="text-align:left">1400000</td><td></td><td>14100</td><td>128000</td><td style="text-align:left">1420000</td></tr><tr><td>période de rotation</td><td style="text-align:left">23j</td><td></td><td>243j</td><td>23h56’4’’</td><td style="text-align:left">9h50’</td></tr><tr><td>période de révolution</td><td style="text-align:left"></td><td></td><td>224.7j</td><td>365.26j</td><td style="text-align:left">11.86ans</td></tr><tr><td>temperature à la surface</td><td style="text-align:left">6000℃</td><td>427℃</td><td>460℃</td><td>15℃</td><td style="text-align:left">-140℃</td></tr><tr><td>l’état de physique</td><td style="text-align:left">gaz</td><td></td><td>solide</td><td>solide</td><td style="text-align:left">liquide</td></tr><tr><td>les composants d’atmosphère</td><td style="text-align:left">hydrogénée/hélium</td><td></td><td>gaz carbonique</td><td>air</td><td style="text-align:left">hydrogénée/hélium</td></tr></tbody></table><table><thead><tr><th>matériel</th><th></th><th></th></tr></thead><tbody><tr><td>gaz</td><td>air/20℃</td><td>343m/s</td></tr><tr><td>solide</td><td>or</td><td>3240m/s</td></tr><tr><td></td><td>aluminium</td><td>6420m/s</td></tr><tr><td>liquide</td><td>eau</td><td>1480m/s</td></tr><tr><td></td><td>mer</td><td>1531m/s</td></tr></tbody></table><p>faible/basse</p><p>la vitesse de lumiere dans le gaz est plus faible que celui dans la solide</p><h3 id="la-comparaison"><a href="#la-comparaison" class="headerlink" title="la comparaison"></a>la comparaison</h3><ol><li>le diamètre de le Jupiter est (le Jupier a un diamètre)10 fois plus petite que celui du soleil.</li><li>le Jupier ,dont le diamètre est10 fois plus petite que celui du soleil, a une periode de rolation de moins de 10h pour 23j pour le soleil. </li><li>la température à la surface du Jupiter est -140 ℃ alors qu’elle atteint 6000℃ à la surface du soleil.</li><li>Jupiter a un état physique de liquide pour un état du gaz pour le soleil.</li></ol><h4 id="Le-fois"><a href="#Le-fois" class="headerlink" title="Le fois"></a>Le fois</h4><table><thead><tr><th>expression</th><th></th><th>exemple</th></tr></thead><tbody><tr><td>une fois sur deux</td><td>相邻的两次为一组</td><td>les valeurs de x1 et x2 changent chacune une fois sur deux.（相邻两次记为一组，每组中x1，x2都发生变化）</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
       
       
+      <categories>
+          
+          <category> Science Exact </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -203,6 +209,12 @@
         <content type="html"><![CDATA[<h3 id="1-3-1-lois-de-Snell-Descartes"><a href="#1-3-1-lois-de-Snell-Descartes" class="headerlink" title="1.3.1 lois de Snell-Descartes"></a>1.3.1 lois de <strong>Snell</strong>-Descartes</h3><p>milieu ①                <u>\ | /</u></p><p>milieu ②</p><p>(indice de milieu)</p><p>rayon/angle incident</p><p>rayon/angle réfracté</p><h3 id="1-3-6-inverse-d’une-fraction-l’oppose-d’une-nombre"><a href="#1-3-6-inverse-d’une-fraction-l’oppose-d’une-nombre" class="headerlink" title="1.3.6 inverse d’une fraction/l’oppose d’une nombre"></a>1.3.6 inverse d’une fraction/l’oppose d’une nombre</h3><p>la fraction a/b r\est l’inverse de la fraction b/a</p><p>le conjugués(?) de a+bi est a-bi</p><h3 id="1-3-7-puissance-de-10"><a href="#1-3-7-puissance-de-10" class="headerlink" title="1.3.7 puissance de 10"></a>1.3.7 puissance de 10</h3><table><thead><tr><th>notation avec exposant</th><th>notation sans exposant</th><th></th><th>lecture</th></tr></thead><tbody><tr><td>10^1^</td><td>10</td><td>dixième</td><td>10 puissante un</td></tr><tr><td>10^2^</td><td>100</td><td>centième</td><td></td></tr><tr><td>10^3^</td><td></td><td>millième</td><td></td></tr><tr><td>10^4^</td><td></td><td>dix millième</td><td></td></tr><tr><td>10^5^</td><td></td><td>cent millième</td><td></td></tr><tr><td>10^6^</td><td></td><td>millionième</td><td></td></tr><tr><td>10^7^</td><td></td><td></td><td></td></tr><tr><td>10^8^</td><td></td><td></td><td></td></tr><tr><td>10^9^</td><td></td><td>milliardième</td></tr></tbody></table><h3 id="1-3-9-les-nombres-complexes"><a href="#1-3-9-les-nombres-complexes" class="headerlink" title="1.3.9  les nombres complexes"></a>1.3.9  les nombres complexes</h3><h4 id="Definition-representation"><a href="#Definition-representation" class="headerlink" title="Definition représentation"></a>Definition représentation</h4><p>le partie imagine/reel</p><p>module</p><p>conjugue</p><p>exponentielle phi = Exp(e^x^) </p><p>fonction réciproque/Bijection réciproque 反函数</p><p>欧拉变换：pe^θi^=p(cosθ + i sinθ)</p>]]></content>
       
       
+      <categories>
+          
+          <category> Science Exact </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -235,12 +247,18 @@
         <content type="html"><![CDATA[<p>[TOC]</p><h3 id="1-2-1-presentation-des-ensembles-de-nombres"><a href="#1-2-1-presentation-des-ensembles-de-nombres" class="headerlink" title="1.2.1 présentation des ensembles de nombres"></a>1.2.1 présentation des ensembles de nombres</h3><table><thead><tr><th>ensmbles</th><th>lecture</th><th>sens</th></tr></thead><tbody><tr><td>N</td><td>N</td><td>l’ensemble des entier naturel</td></tr><tr><td>N+</td><td>N plus/étoile</td><td>l’ensemble des entier positive(non nul)</td></tr><tr><td>N-</td><td>N moins</td><td>l’ensemble des entier négative</td></tr><tr><td>z</td><td>Z</td><td>l’ensemble des entier relatif</td></tr><tr><td>R</td><td>R</td><td>l’ensemble des réels</td></tr><tr><td>c</td><td>C</td><td>l’ensemble des rationnel</td></tr><tr><td>Q</td><td></td><td>l’ensemble des rationnel</td></tr><tr><td>∞</td><td>l’infinit</td></tr></tbody></table><h3 id="1-2-2-l’ensemble-N-des-entiers-natuels"><a href="#1-2-2-l’ensemble-N-des-entiers-natuels" class="headerlink" title="1.2.2 l’ensemble N des entiers natuels"></a>1.2.2 l’ensemble N des entiers natuels</h3><p>les chiffres sont 0,1,2,3,4……</p><h4 id="la-graph"><a href="#la-graph" class="headerlink" title="la graph"></a>la graph</h4><table><thead><tr><th></th><th>lecture</th></tr></thead><tbody><tr><td>个位</td><td>unité</td></tr><tr><td>十位</td><td>dizaine</td></tr><tr><td>百位</td><td>certaine</td></tr><tr><td>千位</td><td>millier</td></tr><tr><td>万位</td><td>dizaine des milliers</td></tr></tbody></table><h4 id="les-prefix-quantitatif"><a href="#les-prefix-quantitatif" class="headerlink" title="les préfix quantitatif"></a>les préfix quantitatif</h4><table><thead><tr><th>signifient</th><th>préfix</th></tr></thead><tbody><tr><td>0.5</td><td>semi/demi/nemi/mi/hemi</td></tr><tr><td>1(un seul)</td><td>mono/uni</td></tr><tr><td>2</td><td>bi/di</td></tr><tr><td>3</td><td>tri</td></tr><tr><td>4</td><td>quand</td></tr><tr><td>5</td><td>quinqua/penta</td></tr><tr><td>6</td><td>hexa(gonal/gone)</td></tr><tr><td>7</td><td>hepta</td></tr><tr><td>8</td><td>octo</td></tr><tr><td>9</td><td>ennéa</td></tr><tr><td>10</td><td>deca</td></tr></tbody></table><p>par example: le silicium est un semi conducteur.</p><h4 id="les-notion-decimale"><a href="#les-notion-decimale" class="headerlink" title="les notion décimale"></a>les notion décimale</h4><p>les chiffre placent à la gauche de la virgule: le partie décimale</p><p>les chiffre placent à la droite de la virgule: le partie entière</p><h4 id="PS-cours"><a href="#PS-cours" class="headerlink" title="PS.cours"></a>PS.cours</h4><p>TP tarvaux diriges</p><p>TP fravaux pratique </p><h4 id="les-fraction"><a href="#les-fraction" class="headerlink" title="les fraction"></a>les fraction</h4><table><thead><tr><th>les fraction</th><th>lecture</th></tr></thead><tbody><tr><td>1/2</td><td>un demi , la moitié</td></tr><tr><td>1/3</td><td>un tiers</td></tr><tr><td>1/4</td><td>un quart</td></tr><tr><td>2/3</td><td>deux tiers</td></tr><tr><td>3/4</td><td>trois quarts</td></tr><tr><td>1/5</td><td><strong>un cinquième</strong></td></tr><tr><td>1/7</td><td>un septième</td></tr></tbody></table><h4 id="Arrondi-mathematiques"><a href="#Arrondi-mathematiques" class="headerlink" title="Arrondi (mathématiques)"></a>Arrondi (mathématiques)</h4><p>π ≈ 3.1415926</p><p>π est approché par 1.41 à 10^-3 près par defaut</p><p>π est approché par 1.42 à 10^-3 près par excès</p><h4 id="les-relations-entre-les-chiffres"><a href="#les-relations-entre-les-chiffres" class="headerlink" title="les relations entre les chiffres"></a>les relations entre les chiffres</h4><p>a＜x＜b → x∈]a,b[ ————– x est compri entre a et b</p><p>a ≤ x ≤ b → x∈[a,b] ————– x appartien à l’intervalle ferme de a b</p><p>a est la borne inférieur</p><p>b est la borne superieur</p><h4 id="la-terre"><a href="#la-terre" class="headerlink" title="la terre"></a>la terre</h4><p>l’hemisphère nord</p><p>l’équateur</p><p>l’hémisphère sud</p>]]></content>
       
       
+      <categories>
+          
+          <category> Science Exact </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> Science Exact </tag>
-            
             <tag> note </tag>
+            
+            <tag> Science Exact </tag>
             
             <tag> l&#39;ensemble </tag>
             
@@ -289,12 +307,18 @@
         <content type="html"><![CDATA[<h3 id="exercice"><a href="#exercice" class="headerlink" title="exercice"></a>exercice</h3><h4 id="EX1"><a href="#EX1" class="headerlink" title="EX1"></a>EX1</h4><ol><li>V(a,b)∈R² (a+b)²=a²+b²+2ab<br><code>quelque soit a,b apartenant à R carré ,</code></li><li>Vx∈R 存在y∈R|x＜y</li><li>8x 2 [0; 1]; x &gt; 0 ) 9y 2 R; y2 = x</li></ol><h4 id="EX2"><a href="#EX2" class="headerlink" title="EX2"></a>EX2</h4><ol><li>Pour tout x de R, x positif implique qui il exist y de R plus, tel que y soit la racine carré de x.</li><li>pour tout couple x, y,d’elementaire de R croix R ,x different de y entraîné que la différence de x et y .</li></ol><h3 id="reviser"><a href="#reviser" class="headerlink" title="réviser"></a>réviser</h3><h4 id="ensemble"><a href="#ensemble" class="headerlink" title="ensemble"></a>ensemble</h4><ol><li>N = (0; 1; 2; ) est l’ensemble des entiers naturels,</li><li>Z = ( −2; −1; 0; 1; 2) est l’ensemble des entiers relatifs,</li><li>Q est l’ensemble des rationnels (quotients de deux nombres entiers relatifs</li><li>R est l’ensemble des r´eels<h4 id="Logique"><a href="#Logique" class="headerlink" title="Logique"></a>Logique</h4>pour tout” se note ∀<br>– “il existe ” se note ∃<br>– “appartient” se note ∈<br>– “tel que” se note tq 1</li></ol><p>– A et B se note A ∧ B<br>– A ou B se note A ∨ B<br>– “A implique B ” se note A =⇒ B<br>– “contraire de A” se note eA.</p>]]></content>
       
       
+      <categories>
+          
+          <category> Science Exact </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> Science Exact </tag>
-            
             <tag> note </tag>
+            
+            <tag> Science Exact </tag>
             
         </tags>
       
@@ -310,12 +334,18 @@
         <content type="html"><![CDATA[<h3 id="1-4-2-Comparaison"><a href="#1-4-2-Comparaison" class="headerlink" title="1.4.2 Comparaison"></a>1.4.2 Comparaison</h3><p>On compare x et y / x à y / x avec y</p><table><thead><tr><th>symbol</th><th>lecture</th><th>commentaire</th></tr></thead><tbody><tr><td>=</td><td>a est égale à b</td><td></td></tr><tr><td>≈</td><td>a est approximent égale à b</td><td></td></tr><tr><td>≠</td><td>a est diffierent que b</td><td></td></tr><tr><td>＜</td><td>a est inferieur à b</td><td></td></tr><tr><td>≤</td><td>a est inferieur ou égale à b</td><td></td></tr><tr><td>＞</td><td>a est supérieur à b</td><td></td></tr><tr><td>≥</td><td>a est supérieur ou égale à b</td><td></td></tr><tr><td>⋘</td><td>a est très petite devant b</td><td></td></tr><tr><td>⋙</td><td>a est très grand devant b</td></tr></tbody></table><h3 id="1-4-4-les-operation-elementaire"><a href="#1-4-4-les-operation-elementaire" class="headerlink" title="1.4.4 les opération élémentaire"></a>1.4.4 les opération élémentaire</h3><h4 id="les-symboles-d’operation"><a href="#les-symboles-d’operation" class="headerlink" title="les symboles d’opération"></a>les symboles d’opération</h4><table><thead><tr><th>symbole</th><th></th><th>opération</th><th>lecture</th><th></th></tr></thead><tbody><tr><td>+</td><td>plus</td><td>additionner</td><td>addition</td><td>terme/résultats</td></tr><tr><td>-</td><td>moins</td><td>soustrair</td><td>soustraction</td><td></td></tr><tr><td>×</td><td></td><td>multiplier par</td><td>multiplication</td><td>facteur/produit</td></tr><tr><td>÷</td><td></td><td>diviser par</td><td>division</td><td>rapport/quotient</td></tr><tr><td>dy/dx</td><td>dérivée de y（par rapport à x）</td><td>dériver</td><td>dérivation</td><td></td></tr><tr><td>y^n^</td><td>dérivée second/cube/niem de y</td><td>dériver n fois</td><td>double/n-dérivation</td><td></td></tr><tr><td>∫</td><td>intégrale de</td><td>intégrer</td><td>intégration</td><td></td></tr><tr><td>∬</td><td>intégrer double/de surface</td><td>integrer 2 fois</td><td>double intégration</td><td></td></tr><tr><td>∭</td><td>intégrer triple/de volume</td><td>integrer 3 fois</td><td>triple intégration</td><td></td></tr><tr><td>\</td><td>\</td><td></td><td></td><td></td><td>Valeur absolue</td><td></td></tr><tr><td>-∞</td><td></td><td></td><td>moins infini</td><td></td></tr><tr><td>∑</td><td>la somme de</td><td>sommer</td><td></td><td></td></tr><tr><td>∏</td><td>la produit de</td><td>faire/effectuer le produit de</td><td></td><td></td></tr><tr><td>a/b</td><td>fraction</td><td></td><td></td></tr></tbody></table><h4 id="nombre-de-fois"><a href="#nombre-de-fois" class="headerlink" title="nombre de fois"></a>nombre de fois</h4><table><thead><tr><th></th><th>lecture</th></tr></thead><tbody><tr><td>1</td><td>premier</td></tr><tr><td>2</td><td>second/deuxième</td></tr><tr><td>3</td><td>troisième</td></tr><tr><td>4</td><td>quatrième</td></tr><tr><td>5</td><td><strong>cinquième</strong></td></tr><tr><td>6</td><td>sixième</td></tr><tr><td>7</td><td>septième</td></tr><tr><td>8</td><td>huitième</td></tr><tr><td>9</td><td><strong>neuvième</strong></td></tr><tr><td>10</td><td>dixième</td></tr><tr><td>……</td><td>……</td></tr><tr><td>n</td><td>N+iéme</td></tr></tbody></table><h4 id="multiplication"><a href="#multiplication" class="headerlink" title="multiplication"></a>multiplication</h4><table><thead><tr><th style="text-align:left">facteur</th><th>lecture(n fois)</th></tr></thead><tbody><tr><td style="text-align:left"></td><td>seul</td></tr><tr><td style="text-align:left"></td><td>double</td></tr><tr><td style="text-align:left"></td><td>triple</td></tr><tr><td style="text-align:left"></td><td>quadruple</td></tr><tr><td style="text-align:left"></td><td>quintuple</td></tr><tr><td style="text-align:left"></td><td>sextuple</td></tr><tr><td style="text-align:left"></td><td>septuple</td></tr><tr><td style="text-align:left"></td><td>octuple/huit fois</td></tr><tr><td style="text-align:left"></td><td>neuf fois</td></tr><tr><td style="text-align:left">10</td><td>décuple</td></tr><tr><td style="text-align:left">100</td><td>centuple</td></tr><tr><td style="text-align:left">1000</td><td></td></tr><tr><td style="text-align:left">10000</td></tr></tbody></table><h4 id="additionner-soustraire"><a href="#additionner-soustraire" class="headerlink" title="additionner/soustraire"></a>additionner/soustraire</h4><p>l’addiction est l’operation qui permet calculer le somme<br>le soustraire est l’operation qui permet calculer le différence<br>Exp. 1+3=4<br>terms résultats</p><h4 id="multiplie"><a href="#multiplie" class="headerlink" title="multiplié"></a>multiplié</h4><p>facteur produit</p><h5 id="le-development"><a href="#le-development" class="headerlink" title="- le development"></a>- le development</h5><p>Developer un produit de facteur C’est le transformer en une somme ou une difference de terms.<br>(x-a)(x+a)=x^2^-a^2^<br>identité remarquable</p><h5 id="la-factorisation"><a href="#la-factorisation" class="headerlink" title="- la factorisation"></a>- la factorisation</h5><p>factoriser une expression c’est consisté de une somme ou différence au le produit de deux facteur.<br>x^2^-a^2^=(x-a)(x+a)<br>   ①                ②<br>② est le fractorision de ①<br>②on a mis (x-a) un facteur et (x-a)(x+a) le facteur commun.</p>]]></content>
       
       
+      <categories>
+          
+          <category> Science Exact </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> Science Exact </tag>
-            
             <tag> note </tag>
+            
+            <tag> Science Exact </tag>
             
             <tag> ensemble </tag>
             
@@ -337,12 +367,18 @@
         <content type="html"><![CDATA[<h3 id="System-international（comput-cette-unite-de-base）"><a href="#System-international（comput-cette-unite-de-base）" class="headerlink" title="System international（comput cette unité de base）"></a>System international（comput cette unité de base）</h3><table><thead><tr><th></th><th>Mesure</th><th>Unitaire</th></tr></thead><tbody><tr><td>L</td><td>mètre</td><td>m</td></tr><tr><td>M</td><td>kilomètre</td><td>kg</td></tr><tr><td>J</td><td>candela</td><td>cd</td></tr><tr><td>T</td><td>second</td><td>s</td></tr><tr><td>ф</td><td>kelvin</td><td>k</td></tr><tr><td>N</td><td>mol</td><td></td></tr><tr><td>I</td><td>ampère</td><td>A</td></tr></tbody></table><h3 id="Definition"><a href="#Definition" class="headerlink" title="Définition"></a>Définition</h3><p>==On mesure la grandeur qui possède une dimension.==</p><p>le mol est une quantité de matière</p><p>la candela s’est à mesure d’éclat permuté pas d’ œil d’ humain d’une source lumineuse</p><p>On ne définie alors 7 dimensions de base.</p><h3 id="Des-multiple"><a href="#Des-multiple" class="headerlink" title="Des multiple"></a>Des multiple</h3><table><thead><tr><th>values</th><th>symble</th><th>lecture</th></tr></thead><tbody><tr><td>10^1</td><td></td><td>deca</td></tr><tr><td>10^2</td><td>H</td><td>*hecto</td></tr><tr><td>10^3</td><td>K</td><td>kilo</td></tr><tr><td>10^6</td><td></td><td>*méga</td></tr><tr><td>10^9</td><td></td><td>giga</td></tr><tr><td>10^12</td><td>T</td><td>*tira</td></tr></tbody></table><h3 id="Des-sous-multiple"><a href="#Des-sous-multiple" class="headerlink" title="Des sous multiple"></a>Des sous multiple</h3><table><thead><tr><th>values</th><th>symble</th><th>lecture</th></tr></thead><tbody><tr><td>10^-1</td><td>d</td><td>dèce</td></tr><tr><td>10^-2</td><td>c</td><td>centi</td></tr><tr><td>10^-3</td><td>m</td><td>milli</td></tr><tr><td>10^-6</td><td>μ</td><td>micro</td></tr><tr><td>10^-9</td><td>n</td><td>nano</td></tr><tr><td>10^-12</td><td>p</td><td>pico</td></tr></tbody></table><h3 id="‘ensemble"><a href="#‘ensemble" class="headerlink" title="‘ensemble"></a>‘ensemble</h3><table><thead><tr><th style="text-align:center">Préfixe</th><th style="text-align:center">Facteur</th><th style="text-align:center">Symbole</th><th style="text-align:center">Préfixe</th><th style="text-align:center">Facteur</th><th style="text-align:center">Symbole</th></tr></thead><tbody><tr><td style="text-align:center">exa</td><td style="text-align:center">1018</td><td style="text-align:center">E</td><td style="text-align:center">déci</td><td style="text-align:center">10-1</td><td style="text-align:center">d</td></tr><tr><td style="text-align:center">péta</td><td style="text-align:center">1015</td><td style="text-align:center">P</td><td style="text-align:center">centi</td><td style="text-align:center">10-2</td><td style="text-align:center">c</td></tr><tr><td style="text-align:center">téra</td><td style="text-align:center">1012</td><td style="text-align:center">T</td><td style="text-align:center">milli</td><td style="text-align:center">10-3</td><td style="text-align:center">m</td></tr><tr><td style="text-align:center">giga</td><td style="text-align:center">109</td><td style="text-align:center">G</td><td style="text-align:center">micro</td><td style="text-align:center">10-6</td><td style="text-align:center">u</td></tr><tr><td style="text-align:center">méga</td><td style="text-align:center">106</td><td style="text-align:center">M</td><td style="text-align:center">nano</td><td style="text-align:center">10-9</td><td style="text-align:center">n</td></tr><tr><td style="text-align:center">kilo</td><td style="text-align:center">103</td><td style="text-align:center">k</td><td style="text-align:center">pico</td><td style="text-align:center">10-12</td><td style="text-align:center">p</td></tr><tr><td style="text-align:center">hecto</td><td style="text-align:center">102</td><td style="text-align:center">h</td><td style="text-align:center">femto</td><td style="text-align:center">10-15</td><td style="text-align:center">f</td></tr><tr><td style="text-align:center">déca</td><td style="text-align:center">101</td><td style="text-align:center">da</td><td style="text-align:center">atto</td><td style="text-align:center">10-18</td><td style="text-align:center">a</td></tr></tbody></table>]]></content>
       
       
+      <categories>
+          
+          <category> Science Exact </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> Science Exact </tag>
-            
             <tag> note </tag>
+            
+            <tag> Science Exact </tag>
             
             <tag> mesure </tag>
             
@@ -435,6 +471,12 @@
       
         <content type="html"><![CDATA[<h3 id="Alphabet-Grec"><a href="#Alphabet-Grec" class="headerlink" title="Alphabet Grec"></a>Alphabet Grec</h3><p><img src="https://res.cloudinary.com/dpchw9rog/image/upload/v1557444910/1_ggmgpk.jpg" alt="1"></p><h3 id="mathematiques-en-francais"><a href="#mathematiques-en-francais" class="headerlink" title="mathématiques en français"></a>mathématiques en français</h3><h4 id="symbole"><a href="#symbole" class="headerlink" title="symbole"></a>symbole</h4><p><img src="https://res.cloudinary.com/dpchw9rog/image/upload/v1557444911/2_dwpd8c.png" alt="2"><br><img src="https://res.cloudinary.com/dpchw9rog/image/upload/v1557444910/3_zaje1b.png" alt="3"><br><img src="https://res.cloudinary.com/dpchw9rog/image/upload/v1557444911/4_x34apw.png" alt="4"><br><img src="https://res.cloudinary.com/dpchw9rog/image/upload/v1557444911/5_zq3vqc.png" alt="5"><br><img src="https://res.cloudinary.com/dpchw9rog/image/upload/v1557444911/6_dqtyrs.png" alt="6"></p><h4 id="concept-mathematique"><a href="#concept-mathematique" class="headerlink" title="concept mathématique"></a>concept mathématique</h4><p><img src="https://res.cloudinary.com/dpchw9rog/image/upload/v1557444911/6k_tbwufj.png" alt="6k"></p>]]></content>
       
+      
+      <categories>
+          
+          <category> Science Exact </category>
+          
+      </categories>
       
       
         <tags>
