@@ -1,149 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang>
 <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="阅后即焚">
-    <meta name="keyword" content="学生">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>
-        
-        le pluriel/l&#39;adjective - Catoblepases的博客 | Catoblepases&#39;s Blog
-        
-    </title>
+    <meta name="author" content="John Doe">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/aircloud.css">
-    <link rel="stylesheet" href="/css/gitment.css">
-    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
-    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
-    <!-- ga & ba script hoook -->
-    <script></script>
+
+
+    <meta name="description" content="Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** <br>Fusce eget urna vitae velit *eleifend interdum at ac* nisi.">
+
+
+
+<title>le pluriel/l&#39;adjective | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
 </head>
-
 <body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Bentham&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
 
-<div class="site-nav-toggle" id="site-nav-toggle">
-    <button>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-    </button>
-</div>
+        </div>
+    </nav>
 
-<div class="index-about">
-    <i>  </i>
-</div>
-
-<div class="index-container">
     
-    <div class="index-left">
-        
-<div class="nav" id="nav">
-    <div class="avatar-name">
-        <div class="avatar">
-            <img src="/img/avatar.jpg">
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Bentham&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
         </div>
-        <div class="name">
-            <i>Catoblepases</i>
-        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
     </div>
-    <div class="contents" id="nav-content">
-        <ul>
-            <li>
-                <a href="/">
-                    <i class="iconfont icon-shouye1"></i>
-                    <span>主页</span>
-                </a>
-            </li>
-            <li>
-                <a href="/tags">
-                    <i class="iconfont icon-biaoqian1"></i>
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="/archives">
-                    <i class="iconfont icon-guidang2"></i>
-                    <span>存档</span>
-                </a>
-            </li>
-            <li>
-                <a href="/about/">
-                    <i class="iconfont icon-guanyu2"></i>
-                    <span>关于</span>
-                </a>
-            </li>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">le pluriel/l&#39;adjective</h1>
             
-            <li>
-                <a id="search">
-                    <i class="iconfont icon-sousuo1"></i>
-                    <span>搜索</span>
-                </a>
-            </li>
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">John Doe</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">April 28, 2019&nbsp;&nbsp;17:11:21</a>
+                        </span>
+                    
+                    
+                </div>
             
-        </ul>
-    </div>
-    
-        <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#le-pluriel"><span class="toc-text">le pluriel</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-s"><span class="toc-text">1. +s</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-以-au-ou-eau-eu结尾的＋x"><span class="toc-text">2. 以==au==,ou,==eau==,eu结尾的＋x</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-al结尾的→aux"><span class="toc-text">3. al结尾的→aux</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-s-x结尾的不变"><span class="toc-text">4. s,x结尾的不变</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-单复数词形不同-如"><span class="toc-text">5. 单复数词形不同,如:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#adjective"><span class="toc-text">adjective</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#形容词的性"><span class="toc-text">形容词的性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、有些形容词，其阳性形式变为阴性时，词尾要有一定变化，但仍有一定规律可循："><span class="toc-text">1、有些形容词，其阳性形式变为阴性时，词尾要有一定变化，但仍有一定规律可循：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1）以-gu结尾的形容词阳性形式变阴性时变-gue-如："><span class="toc-text">1）以-gu结尾的形容词阳性形式变阴性时变-guë, 如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2）以-eau-ou-结尾的形容词，其阳性形式为-elle-olle-如："><span class="toc-text">2）以-eau, -ou 结尾的形容词，其阳性形式为-elle, -olle, 如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3）以-el-ul-l结尾的形容词，其阴性形式为-elle-ulle-ille，如："><span class="toc-text">3）以-el, -ul, -l结尾的形容词，其阴性形式为-elle, -ulle, ille，如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4）以-ien-on结尾的形容词，其阴性形式为-ienne和-onne，如："><span class="toc-text">4）以-ien, -on结尾的形容词，其阴性形式为-ienne和-onne，如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-以-an结尾的形容词，其阴性形式为-ane，如："><span class="toc-text">5) 以-an结尾的形容词，其阴性形式为-ane，如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6）以-et结尾的形容词，其阴性形式为-ette，以-ot结尾的形容词，其阴性形式为-ote，如："><span class="toc-text">6）以-et结尾的形容词，其阴性形式为-ette，以-ot结尾的形容词，其阴性形式为-ote，如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7）以-er结尾的形容词，其阴性形式为-ere-如：-le-derniermot-最后一句话"><span class="toc-text">7）以-er结尾的形容词，其阴性形式为-ère,如：     le derniermot (最后一句话)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#8）以-teur-结尾的形容词，其阴性形式为-trice，如："><span class="toc-text">8）以-teur 结尾的形容词，其阴性形式为-trice，如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#9-以-f结尾的形容词，其阴性形式为-ve，如："><span class="toc-text">9) 以-f结尾的形容词，其阴性形式为-ve，如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#10）以-eux-oux-eur结尾的形容词，其阴性形式分别为-euse-ouse-euse，-如："><span class="toc-text">10）以-eux, -oux, -eur结尾的形容词，其阴性形式分别为-euse, -ouse, -euse， 如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#11）其阴性形式词尾是ete-如："><span class="toc-text">11）其阴性形式词尾是ète, 如：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#12）其阴性形式结尾为-sse，如："><span class="toc-text">12）其阴性形式结尾为-sse，如：</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、某些形容词的阴性形式比较特殊，无规律课循，它们是："><span class="toc-text">2、某些形容词的阴性形式比较特殊，无规律课循，它们是：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、形容词的数"><span class="toc-text">二、形容词的数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、形容词变复数时，一般的规则是在单数形式的词尾加字母s-如："><span class="toc-text">1、形容词变复数时，一般的规则是在单数形式的词尾加字母s, 如：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、如果形容词单数形式以字母s或字母x结尾，其复数形式不变，如："><span class="toc-text">2、如果形容词单数形式以字母s或字母x结尾，其复数形式不变，如：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、以-al结尾的形容词变复数时词尾为-aux，-如："><span class="toc-text">3、以-al结尾的形容词变复数时词尾为-aux，, 如：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、以-eau结尾的形容词，其复数形式加字母x，如："><span class="toc-text">4、以-eau结尾的形容词，其复数形式加字母x，如：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三．形容词的位置"><span class="toc-text">三．形容词的位置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#有些形容词却一定要摆在名词前。如："><span class="toc-text">有些形容词却一定要摆在名词前。如：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#必须摆在名词后面的形容词"><span class="toc-text">必须摆在名词后面的形容词</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#•表明颜色的形容词"><span class="toc-text">•表明颜色的形容词</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#•表示国籍的形容词"><span class="toc-text">•表示国籍的形容词</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#•表示形状的形容词"><span class="toc-text">•表示形状的形容词</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#•表示宗教的形容词"><span class="toc-text">•表示宗教的形容词</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#•作形容词用的过去分词"><span class="toc-text">•作形容词用的过去分词</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#•因摆放的位置不同而意义也不同的形容词"><span class="toc-text">•因摆放的位置不同而意义也不同的形容词</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Du-nom-a-l’adjectif"><span class="toc-text">Du nom à l’adjectif</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-简单物理状态表示"><span class="toc-text">1. 简单物理状态表示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-品质与概念化形容词，表达程度-bilite-ite-itie-te"><span class="toc-text">2. 品质与概念化形容词，表达程度 -bilité/-ité/-itié/-té</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-本身来自名词-以-eux结尾"><span class="toc-text">3. 本身来自名词,以-eux结尾</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-ion"><span class="toc-text">4. -ion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-ance-ence"><span class="toc-text">5. ance/ence</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-主义-isme"><span class="toc-text">6. 主义 -isme</span></a></li></ol></li></ol>
-</div>
-    
-</div>
+        </header>
 
-
-<div class="search-field" id="search-field">
-    <div class="search-container">
-        <div class="search-input">
-            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
-            <input id="search-input">
-            <span id="begin-search">搜索</span>
-        </div>
-        <div class="search-result-container" id="search-result-container">
-
-        </div>
-    </div>
-</div>
-        <div class="index-about-mobile">
-            <i>  </i>
-        </div>
-    </div>
-    
-    <div class="index-middle">
-        <!-- Main Content -->
-        
-
-
-<div class="post-container">
-    <div class="post-title">
-        le pluriel/l'adjective
-    </div>
-
-    <div class="post-meta">
-        <span class="attr">发布于：<span>2019-04-28 17:11:21</span></span>
-        
-        <span class="attr">标签：/
-        
-        <a class="tag" href="/tags/#note française" title="note française">note française</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#le pluriel" title="le pluriel">le pluriel</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#l&#39;adjective" title="l&#39;adjective">l&#39;adjective</a>
-        <span>/</span>
-        
-        
-        </span>
-        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
-</span>
-
-    </div>
-    <div class="post-content no-indent">
-        <h3 id="le-pluriel"><a href="#le-pluriel" class="headerlink" title="le pluriel"></a>le pluriel</h3><h4 id="1-s"><a href="#1-s" class="headerlink" title="1. +s"></a>1. +s</h4><h4 id="2-以-au-ou-eau-eu结尾的＋x"><a href="#2-以-au-ou-eau-eu结尾的＋x" class="headerlink" title="2. 以==au==,ou,==eau==,eu结尾的＋x"></a>2. 以==au==,ou,==eau==,eu结尾的＋x</h4><p>==-ou → -ous : un clou —- des clous==</p>
+        <div class="post-content">
+            <h3 id="le-pluriel"><a href="#le-pluriel" class="headerlink" title="le pluriel"></a>le pluriel</h3><h4 id="1-s"><a href="#1-s" class="headerlink" title="1. +s"></a>1. +s</h4><h4 id="2-以-au-ou-eau-eu结尾的＋x"><a href="#2-以-au-ou-eau-eu结尾的＋x" class="headerlink" title="2. 以==au==,ou,==eau==,eu结尾的＋x"></a>2. 以==au==,ou,==eau==,eu结尾的＋x</h4><p>==-ou → -ous : un clou —- des clous==</p>
 <h4 id="3-al结尾的→aux"><a href="#3-al结尾的→aux" class="headerlink" title="3. al结尾的→aux"></a>3. al结尾的→aux</h4><p>==sauf bananl naval final fatal natal==</p>
 <h4 id="4-s-x结尾的不变"><a href="#4-s-x结尾的不变" class="headerlink" title="4. s,x结尾的不变"></a>4. s,x结尾的不变</h4><h4 id="5-单复数词形不同-如"><a href="#5-单复数词形不同-如" class="headerlink" title="5. 单复数词形不同,如:"></a>5. 单复数词形不同,如:</h4><pre><code>une oeil 一只眼睛→des yeux双眼
 monsieur一位先生→messieurs 先生们
@@ -174,7 +224,7 @@ une farce idiote (一个愚蠢的玩笑)
 <h6 id="7）以-er结尾的形容词，其阴性形式为-ere-如：-le-derniermot-最后一句话"><a href="#7）以-er结尾的形容词，其阴性形式为-ere-如：-le-derniermot-最后一句话" class="headerlink" title="7）以-er结尾的形容词，其阴性形式为-ère,如：     le derniermot (最后一句话)"></a>7）以-er结尾的形容词，其阴性形式为-ère,如：     le derniermot (最后一句话)</h6><pre><code>la dernière page （最后一页）     un léger retard (迟到一会儿)     unebarque légère (一叶轻舟)
 </code></pre><h6 id="8）以-teur-结尾的形容词，其阴性形式为-trice，如："><a href="#8）以-teur-结尾的形容词，其阴性形式为-trice，如：" class="headerlink" title="8）以-teur 结尾的形容词，其阴性形式为-trice，如："></a>8）以-teur 结尾的形容词，其阴性形式为-trice，如：</h6><pre><code>un nomévocateur (引起联想的名字)
 une phrase évocatrice （引起联想的句子）
-</code></pre><h6 id="9-以-f结尾的形容词，其阴性形式为-ve，如："><a href="#9-以-f结尾的形容词，其阴性形式为-ve，如：" class="headerlink" title="9) 以-f结尾的形容词，其阴性形式为-ve，如："></a>9) 以-f结尾的形容词，其阴性形式为-ve，如：</h6><figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">un froid vif （刺骨的寒冷）<span class="keyword">une</span> lumière vive （刺目的亮光）</span><br></pre></td></tr></table></figure>
+</code></pre><h6 id="9-以-f结尾的形容词，其阴性形式为-ve，如："><a href="#9-以-f结尾的形容词，其阴性形式为-ve，如：" class="headerlink" title="9) 以-f结尾的形容词，其阴性形式为-ve，如："></a>9) 以-f结尾的形容词，其阴性形式为-ve，如：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">un froid vif （刺骨的寒冷）une lumière vive （刺目的亮光）</span><br></pre></td></tr></table></figure>
 <h6 id="10）以-eux-oux-eur结尾的形容词，其阴性形式分别为-euse-ouse-euse，-如："><a href="#10）以-eux-oux-eur结尾的形容词，其阴性形式分别为-euse-ouse-euse，-如：" class="headerlink" title="10）以-eux, -oux, -eur结尾的形容词，其阴性形式分别为-euse, -ouse, -euse， 如："></a>10）以-eux, -oux, -eur结尾的形容词，其阴性形式分别为-euse, -ouse, -euse， 如：</h6><pre><code>un garçon sérieux （一个严肃的男孩）     
 une idée sérieuse（一个严肃的想法）     
 un enfant jaloux　（一个有妒忌心的孩子）     
@@ -183,8 +233,8 @@ un rire trompeur　（奸笑）
 une réponse trompeuse　（骗人的答复）
 </code></pre><p>但是meilleur(较好的)，antérieur(以前的), supérieur（高级的）, inférieur（低下的）, majeur（成年的），其阴性形式是在词尾加字母e, 如：</p>
 <pre><code>un meilleur avis (一个较好的主意)     une meilleure méthode （一个更好的办法）
-</code></pre><h6 id="11）其阴性形式词尾是ete-如："><a href="#11）其阴性形式词尾是ete-如：" class="headerlink" title="11）其阴性形式词尾是ète, 如："></a>11）其阴性形式词尾是ète, 如：</h6><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Complet（完整的）, incomplet （不完整的）, indiscret（不谨慎的）, discret（谨慎的）, inquiet （不安的）, secret（秘密的）等形容词，    </span><br><span class="line">un regard inquiet     <span class="keyword">l</span>’â<span class="keyword">me</span> inquiè<span class="keyword">te</span></span><br></pre></td></tr></table></figure>
-<h6 id="12）其阴性形式结尾为-sse，如："><a href="#12）其阴性形式结尾为-sse，如：" class="headerlink" title="12）其阴性形式结尾为-sse，如："></a>12）其阴性形式结尾为-sse，如：</h6><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Bas（低）, </span>épais（厚）, gros（肥）, faux（假）, roux（红棕色）, las（厌倦）,métis（混血的）等形容词， </span><br><span class="line"><span class="symbol">un</span> ciel <span class="keyword">bas </span>(阴沉的天)      une température <span class="keyword">basse </span>（低温）</span><br></pre></td></tr></table></figure>
+</code></pre><h6 id="11）其阴性形式词尾是ete-如："><a href="#11）其阴性形式词尾是ete-如：" class="headerlink" title="11）其阴性形式词尾是ète, 如："></a>11）其阴性形式词尾是ète, 如：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Complet（完整的）, incomplet （不完整的）, indiscret（不谨慎的）, discret（谨慎的）, inquiet （不安的）, secret（秘密的）等形容词，    </span><br><span class="line">un regard inquiet     l’âme inquiète</span><br></pre></td></tr></table></figure>
+<h6 id="12）其阴性形式结尾为-sse，如："><a href="#12）其阴性形式结尾为-sse，如：" class="headerlink" title="12）其阴性形式结尾为-sse，如："></a>12）其阴性形式结尾为-sse，如：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Bas（低）, épais（厚）, gros（肥）, faux（假）, roux（红棕色）, las（厌倦）,métis（混血的）等形容词， </span><br><span class="line">un ciel bas (阴沉的天)      une température basse （低温）</span><br></pre></td></tr></table></figure>
 <h5 id="2、某些形容词的阴性形式比较特殊，无规律课循，它们是："><a href="#2、某些形容词的阴性形式比较特殊，无规律课循，它们是：" class="headerlink" title="2、某些形容词的阴性形式比较特殊，无规律课循，它们是："></a>2、某些形容词的阴性形式比较特殊，无规律课循，它们是：</h5><p>blanc              blanche ;<br>franc(坦白的)    franche<br>frais（新鲜的） fraîche ;<br>sec（干的）      sèche</p>
 <p>doux（温和的）  douce ;<br>tiers（第三）   tierce   </p>
 <p>long               longue ;</p>
@@ -238,113 +288,82 @@ un certain courage（几分勇气） ; une preuvecertaine（证据确凿）
 un bon homme （老实人）; un homme bon（好人）
 un ancien hôtel （以前是一间旅馆）; une maison ancienne（旧房子）
 une fause femme（有男人假扮成的女人） ; une femme fausse（做作的女人）
-</code></pre><h3 id="Du-nom-a-l’adjectif"><a href="#Du-nom-a-l’adjectif" class="headerlink" title="Du nom à l’adjectif"></a>Du nom à l’adjectif</h3><h4 id="1-简单物理状态表示"><a href="#1-简单物理状态表示" class="headerlink" title="1. 简单物理状态表示"></a>1. 简单物理状态表示</h4><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">grand<span class="comment">------grandeur</span></span><br><span class="line">lent<span class="comment">-----lenteur</span></span><br><span class="line">large<span class="comment">-----largeur/ largesse</span></span><br><span class="line">doux<span class="comment">-----douceur</span></span><br><span class="line">haut<span class="comment">-----hauteur</span></span><br></pre></td></tr></table></figure>
-<h4 id="2-品质与概念化形容词，表达程度-bilite-ite-itie-te"><a href="#2-品质与概念化形容词，表达程度-bilite-ite-itie-te" class="headerlink" title="2. 品质与概念化形容词，表达程度 -bilité/-ité/-itié/-té"></a>2. 品质与概念化形容词，表达程度 -bilité/-ité/-itié/-té</h4><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">amical<span class="comment">-----amitié</span></span><br><span class="line">amaible<span class="comment">-----amabilité</span></span><br><span class="line">libre<span class="comment">-----liberté</span></span><br><span class="line">celebre<span class="comment">-----célébrité</span></span><br></pre></td></tr></table></figure>
-<h4 id="3-本身来自名词-以-eux结尾"><a href="#3-本身来自名词-以-eux结尾" class="headerlink" title="3. 本身来自名词,以-eux结尾"></a>3. 本身来自名词,以-eux结尾</h4><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">parasseux<span class="comment">-----paresse</span></span><br><span class="line">amoureux<span class="comment">-----amour</span></span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="Du-nom-a-l’adjectif"><a href="#Du-nom-a-l’adjectif" class="headerlink" title="Du nom à l’adjectif"></a>Du nom à l’adjectif</h3><h4 id="1-简单物理状态表示"><a href="#1-简单物理状态表示" class="headerlink" title="1. 简单物理状态表示"></a>1. 简单物理状态表示</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">grand------grandeur</span><br><span class="line">lent-----lenteur</span><br><span class="line">large-----largeur/ largesse</span><br><span class="line">doux-----douceur</span><br><span class="line">haut-----hauteur</span><br></pre></td></tr></table></figure>
+<h4 id="2-品质与概念化形容词，表达程度-bilite-ite-itie-te"><a href="#2-品质与概念化形容词，表达程度-bilite-ite-itie-te" class="headerlink" title="2. 品质与概念化形容词，表达程度 -bilité/-ité/-itié/-té"></a>2. 品质与概念化形容词，表达程度 -bilité/-ité/-itié/-té</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">amical-----amitié</span><br><span class="line">amaible-----amabilité</span><br><span class="line">libre-----liberté</span><br><span class="line">celebre-----célébrité</span><br></pre></td></tr></table></figure>
+<h4 id="3-本身来自名词-以-eux结尾"><a href="#3-本身来自名词-以-eux结尾" class="headerlink" title="3. 本身来自名词,以-eux结尾"></a>3. 本身来自名词,以-eux结尾</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">parasseux-----paresse</span><br><span class="line">amoureux-----amour</span><br></pre></td></tr></table></figure>
 <h4 id="4-ion"><a href="#4-ion" class="headerlink" title="4. -ion"></a>4. -ion</h4><h4 id="5-ance-ence"><a href="#5-ance-ence" class="headerlink" title="5. ance/ence"></a>5. ance/ence</h4><h4 id="6-主义-isme"><a href="#6-主义-isme" class="headerlink" title="6. 主义 -isme"></a>6. 主义 -isme</h4>
-        
-        <br>
-        <div id="comment-container">
-        </div>
-        <div id="disqus_thread"></div>
-
-        <div id="lv-container">
         </div>
 
-    </div>
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>John Doe</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://yoursite.com/2019/04/28/190428-note/">http://yoursite.com/2019/04/28/190428-note/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY<strong>?</strong></strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/note-francaise/"># note française</a>
+                    
+                        <a href="/tags/le-pluriel/"># le pluriel</a>
+                    
+                        <a href="/tags/l-adjective/"># l'adjective</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2019/05/03/Science-Exact-1-2-les ensembles de nombres/">Science Exact|1.2 les ensembles de nombres</a>
+            
+            
+            <a class="next" rel="next" href="/2019/04/28/Science-Exact-Exercise/">Science Exact-Exercice</a>
+            
+        </section>
+
+
+    </article>
 </div>
 
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
-</div>
-
-
-<footer class="footer">
-    <ul class="list-inline text-center">
-        
-        
-        <li>
-            <a target="_blank" href="https://www.zhihu.com/people/chen-ran-72-38">
-                            <span class="fa-stack fa-lg">
-                                 <i class="iconfont icon-zhihu"></i>
-                            </span>
-            </a>
-        </li>
-        
-
-        
-        <li>
-            <a target="_blank" href="http://weibo.com/Catoblepases">
-                            <span class="fa-stack fa-lg">
-                                  <i class="iconfont icon-weibo"></i>
-                            </span>
-            </a>
-        </li>
-        
-
-        
-
-        
-        <li>
-            <a target="_blank" href="https://github.com/Catoblepases">
-                            <span class="fa-stack fa-lg">
-                                <i class="iconfont icon-github"></i>
-                            </span>
-            </a>
-        </li>
-        
-
-        
-        <li>
-            <a target="_blank" href="https://www.linkedin.com/in/xueyuxin">
-                            <span class="fa-stack fa-lg">
-                                <i class="iconfont icon-linkedin"></i>
-                            </span>
-            </a>
-        </li>
-        
-
-    </ul>
-    
-    <p>
-        <span>/</span>
-        
-        <span><a href="https://moodle-sciences.upmc.fr/moodle-2019/login/index.php">Moodle</a></span>
-        <span>/</span>
-        
-        <span><a href="http://www.licence.info.upmc.fr/lmd/licence/2019/ue/LU1IN001-2019oct/cgi-bin/remettreDevoir2019.cgi">Soumission des TME</a></span>
-        <span>/</span>
-        
-        <span><a href="#">It helps me grow</a></span>
-        <span>/</span>
-        
-    </p>
-    
-    <p>
-        <span id="busuanzi_container_site_pv">
-            <span id="busuanzi_value_site_pv"></span>PV
-        </span>
-        <span id="busuanzi_container_site_uv">
-            <span id="busuanzi_value_site_uv"></span>UV
-        </span>
-        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
 </footer>
 
-
-
-
+    </div>
 </body>
-
-<script>
-    // We expose some of the variables needed by the front end
-    window.hexo_search_path = "search.json"
-    window.hexo_root = "/"
-    window.isPost = true
-</script>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
 </html>

@@ -1,155 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang>
 <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="阅后即焚">
-    <meta name="keyword" content="学生">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>
-        
-        Science Exact|1.4 les action sur les nombres - Catoblepases的博客 | Catoblepases&#39;s Blog
-        
-    </title>
+    <meta name="author" content="John Doe">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/aircloud.css">
-    <link rel="stylesheet" href="/css/gitment.css">
-    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
-    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
-    <!-- ga & ba script hoook -->
-    <script></script>
+
+
+    <meta name="description" content="Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** <br>Fusce eget urna vitae velit *eleifend interdum at ac* nisi.">
+
+
+
+<title>Science Exact|1.4 les action sur les nombres | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
 </head>
-
 <body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Bentham&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
 
-<div class="site-nav-toggle" id="site-nav-toggle">
-    <button>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-    </button>
-</div>
+        </div>
+    </nav>
 
-<div class="index-about">
-    <i>  </i>
-</div>
-
-<div class="index-container">
     
-    <div class="index-left">
-        
-<div class="nav" id="nav">
-    <div class="avatar-name">
-        <div class="avatar">
-            <img src="/img/avatar.jpg">
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Bentham&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
         </div>
-        <div class="name">
-            <i>Catoblepases</i>
-        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
     </div>
-    <div class="contents" id="nav-content">
-        <ul>
-            <li>
-                <a href="/">
-                    <i class="iconfont icon-shouye1"></i>
-                    <span>主页</span>
-                </a>
-            </li>
-            <li>
-                <a href="/tags">
-                    <i class="iconfont icon-biaoqian1"></i>
-                    <span>标签</span>
-                </a>
-            </li>
-            <li>
-                <a href="/archives">
-                    <i class="iconfont icon-guidang2"></i>
-                    <span>存档</span>
-                </a>
-            </li>
-            <li>
-                <a href="/about/">
-                    <i class="iconfont icon-guanyu2"></i>
-                    <span>关于</span>
-                </a>
-            </li>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Science Exact|1.4 les action sur les nombres</h1>
             
-            <li>
-                <a id="search">
-                    <i class="iconfont icon-sousuo1"></i>
-                    <span>搜索</span>
-                </a>
-            </li>
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">John Doe</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">April 25, 2019&nbsp;&nbsp;22:43:13</a>
+                        </span>
+                    
+                    
+                </div>
             
-        </ul>
-    </div>
-    
-        <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-2-Comparaison"><span class="toc-text">1.4.2 Comparaison</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-4-les-operation-elementaire"><span class="toc-text">1.4.4 les opération élémentaire</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#les-symboles-d’operation"><span class="toc-text">les symboles d’opération</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#nombre-de-fois"><span class="toc-text">nombre de fois</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#multiplication"><span class="toc-text">multiplication</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#additionner-soustraire"><span class="toc-text">additionner/soustraire</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#multiplie"><span class="toc-text">multiplié</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#le-development"><span class="toc-text">- le development</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#la-factorisation"><span class="toc-text">- la factorisation</span></a></li></ol></li></ol></li></ol>
-</div>
-    
-</div>
+        </header>
 
-
-<div class="search-field" id="search-field">
-    <div class="search-container">
-        <div class="search-input">
-            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
-            <input id="search-input">
-            <span id="begin-search">搜索</span>
-        </div>
-        <div class="search-result-container" id="search-result-container">
-
-        </div>
-    </div>
-</div>
-        <div class="index-about-mobile">
-            <i>  </i>
-        </div>
-    </div>
-    
-    <div class="index-middle">
-        <!-- Main Content -->
-        
-
-
-<div class="post-container">
-    <div class="post-title">
-        Science Exact|1.4 les action sur les nombres
-    </div>
-
-    <div class="post-meta">
-        <span class="attr">发布于：<span>2019-04-25 22:43:13</span></span>
-        
-        <span class="attr">标签：/
-        
-        <a class="tag" href="/tags/#note" title="note">note</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#Science Exact" title="Science Exact">Science Exact</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#ensemble" title="ensemble">ensemble</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#multiplication" title="multiplication">multiplication</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#nombre de fois" title="nombre de fois">nombre de fois</a>
-        <span>/</span>
-        
-        
-        </span>
-        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
-</span>
-
-    </div>
-    <div class="post-content no-indent">
-        <h3 id="1-4-2-Comparaison"><a href="#1-4-2-Comparaison" class="headerlink" title="1.4.2 Comparaison"></a>1.4.2 Comparaison</h3><p>On compare x et y / x à y / x avec y</p>
+        <div class="post-content">
+            <h3 id="1-4-2-Comparaison"><a href="#1-4-2-Comparaison" class="headerlink" title="1.4.2 Comparaison"></a>1.4.2 Comparaison</h3><p>On compare x et y / x à y / x avec y</p>
 <table>
 <thead>
 <tr>
@@ -441,109 +485,82 @@
 <h5 id="le-development"><a href="#le-development" class="headerlink" title="- le development"></a>- le development</h5><p>Developer un produit de facteur C’est le transformer en une somme ou une difference de terms.<br>(x-a)(x+a)=x^2^-a^2^<br>identité remarquable</p>
 <h5 id="la-factorisation"><a href="#la-factorisation" class="headerlink" title="- la factorisation"></a>- la factorisation</h5><p>factoriser une expression c’est consisté de une somme ou différence au le produit de deux facteur.<br>x^2^-a^2^=(x-a)(x+a)<br>   ①                ②<br>② est le fractorision de ①<br>②on a mis (x-a) un facteur et (x-a)(x+a) le facteur commun.</p>
 
-        
-        <br>
-        <div id="comment-container">
-        </div>
-        <div id="disqus_thread"></div>
-
-        <div id="lv-container">
         </div>
 
-    </div>
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>John Doe</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://yoursite.com/2019/04/25/Science-Exact-1-4-les action sur les nombres/">http://yoursite.com/2019/04/25/Science-Exact-1-4-les action sur les nombres/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY<strong>?</strong></strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Science-Exact/"># Science Exact</a>
+                    
+                        <a href="/tags/note/"># note</a>
+                    
+                        <a href="/tags/ensemble/"># ensemble</a>
+                    
+                        <a href="/tags/multiplication/"># multiplication</a>
+                    
+                        <a href="/tags/nombre-de-fois/"># nombre de fois</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2019/04/28/Science-Exact-Exercise/">Science Exact-Exercice</a>
+            
+            
+            <a class="next" rel="next" href="/2019/04/25/Science-Exact-1-5-Mesure/">Science Exact|1.5 Mesure</a>
+            
+        </section>
+
+
+    </article>
 </div>
 
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
-</div>
-
-
-<footer class="footer">
-    <ul class="list-inline text-center">
-        
-        
-        <li>
-            <a target="_blank" href="https://www.zhihu.com/people/chen-ran-72-38">
-                            <span class="fa-stack fa-lg">
-                                 <i class="iconfont icon-zhihu"></i>
-                            </span>
-            </a>
-        </li>
-        
-
-        
-        <li>
-            <a target="_blank" href="http://weibo.com/Catoblepases">
-                            <span class="fa-stack fa-lg">
-                                  <i class="iconfont icon-weibo"></i>
-                            </span>
-            </a>
-        </li>
-        
-
-        
-
-        
-        <li>
-            <a target="_blank" href="https://github.com/Catoblepases">
-                            <span class="fa-stack fa-lg">
-                                <i class="iconfont icon-github"></i>
-                            </span>
-            </a>
-        </li>
-        
-
-        
-        <li>
-            <a target="_blank" href="https://www.linkedin.com/in/xueyuxin">
-                            <span class="fa-stack fa-lg">
-                                <i class="iconfont icon-linkedin"></i>
-                            </span>
-            </a>
-        </li>
-        
-
-    </ul>
-    
-    <p>
-        <span>/</span>
-        
-        <span><a href="https://moodle-sciences.upmc.fr/moodle-2019/login/index.php">Moodle</a></span>
-        <span>/</span>
-        
-        <span><a href="http://www.licence.info.upmc.fr/lmd/licence/2019/ue/LU1IN001-2019oct/cgi-bin/remettreDevoir2019.cgi">Soumission des TME</a></span>
-        <span>/</span>
-        
-        <span><a href="#">It helps me grow</a></span>
-        <span>/</span>
-        
-    </p>
-    
-    <p>
-        <span id="busuanzi_container_site_pv">
-            <span id="busuanzi_value_site_pv"></span>PV
-        </span>
-        <span id="busuanzi_container_site_uv">
-            <span id="busuanzi_value_site_uv"></span>UV
-        </span>
-        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
 </footer>
 
-
-
-
+    </div>
 </body>
-
-<script>
-    // We expose some of the variables needed by the front end
-    window.hexo_search_path = "search.json"
-    window.hexo_root = "/"
-    window.isPost = true
-</script>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
 </html>
