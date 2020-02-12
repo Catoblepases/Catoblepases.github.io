@@ -179,8 +179,6 @@
             
                 <div class="post-meta">
                     
-                        Author: <a itemprop="author" rel="author" href="/">John Doe</a>
-                    
 
                     
                         <span class="post-time">
@@ -200,34 +198,6 @@
 <h4 id="6-9"><a href="#6-9" class="headerlink" title="6.9"></a>6.9</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#6.9</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">jonction</span><span class="params">(L, c)</span>:</span></span><br><span class="line">    <span class="string">""" list[str] * str -&gt; str</span></span><br><span class="line"><span class="string">    Hypothèse : len(c) = 1</span></span><br><span class="line"><span class="string">    retourne la chaîne composée de la jonction des</span></span><br><span class="line"><span class="string">    chaîne de L séparées deux-à-deux par le</span></span><br><span class="line"><span class="string">    caractère séparateur c."""</span></span><br><span class="line">    <span class="comment">#B:str</span></span><br><span class="line">    B = <span class="string">""</span></span><br><span class="line">    <span class="comment">#i:int</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(L) - <span class="number">1</span>):</span><br><span class="line">        B = B + L[i] + c</span><br><span class="line">    <span class="keyword">return</span> B + L[len(L) - <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(jonction([<span class="string">'un'</span>, <span class="string">'deux'</span>, <span class="string">'trois'</span>, <span class="string">'quatre'</span>], <span class="string">'.'</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">separation</span><span class="params">(s, c)</span>:</span></span><br><span class="line">    <span class="string">""" str * str -&gt; list[str]</span></span><br><span class="line"><span class="string">    Hypothèse : len(c) = 1</span></span><br><span class="line"><span class="string">    retourne la liste de chaînes composées des sous-chaînes</span></span><br><span class="line"><span class="string">    de s séparées par le caractère séparateur c.</span></span><br><span class="line"><span class="string">    Le séparateur c n'est pas présent dans la chaîne résultat."""</span></span><br><span class="line">    <span class="comment">#k1:int</span></span><br><span class="line">    k1 = <span class="number">0</span></span><br><span class="line">    <span class="comment">#k2:int</span></span><br><span class="line">    k2 = <span class="number">0</span></span><br><span class="line">    <span class="comment">#l:list[str]</span></span><br><span class="line">    l = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(s)):</span><br><span class="line">        <span class="keyword">if</span> s[i] == c:</span><br><span class="line">            k2 = i</span><br><span class="line">            l.append(s[k1:k2])</span><br><span class="line">            k1 = i + <span class="number">1</span></span><br><span class="line">    l.append(s[k2 + <span class="number">1</span>:])</span><br><span class="line">    <span class="keyword">return</span> l</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(separation(<span class="string">'un.deux.trois.quatre'</span>, <span class="string">'.'</span>))</span><br></pre></td></tr></table></figure>
         </div>
 
-        
-            <section class="post-copyright">
-                
-                    <p class="copyright-item">
-                        <span>Author:</span>
-                        <span>John Doe</span>
-                    </p>
-                
-                
-                    <p class="copyright-item">
-                        <span>Permalink:</span>
-                        <span><a href="http://yoursite.com/2019/11/05/inbox(过时效性）/Informatique-TP6/">http://yoursite.com/2019/11/05/inbox(过时效性）/Informatique-TP6/</a></span>
-                    </p>
-                
-                
-                    <p class="copyright-item">
-                        <span>License:</span>
-                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
-                    </p>
-                
-                
-                     <p class="copyright-item">
-                         <span>Slogan:</span>
-                         <span>Do you believe in <strong>DESTINY<strong>?</strong></strong></span>
-                     </p>
-                
-
-            </section>
         
         <section class="post-tags">
             <div>
