@@ -191,27 +191,77 @@
         </header>
 
         <div class="post-content">
-            <h3 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h3><ul>
+            <h1 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h1><h2 id="知识体系串联"><a href="#知识体系串联" class="headerlink" title="知识体系串联"></a>知识体系串联</h2><p>Déminant<strong>&lt;—&gt;</strong>Sous-espace<strong>&lt;—&gt;</strong>Matrice<strong>&lt;—&gt;</strong>AX=B</p>
+<ul>
+<li><p>det(A)=0 <strong>&lt;—&gt;</strong> A est inversible <strong>&lt;—&gt;</strong> r=m=n <strong>&lt;—&gt;</strong> bijective/triangulable</p>
+<p>​                          A est une base(génératrice et libre)<br>​                          AX=B 仅有一解</p>
+</li>
+</ul>
+<h2 id="I-Matrice"><a href="#I-Matrice" class="headerlink" title="I Matrice"></a><strong>I Matrice</strong></h2><h4 id="Calcul-matriciel"><a href="#Calcul-matriciel" class="headerlink" title="Calcul matriciel"></a>Calcul matriciel</h4><ul>
 <li>线性代数的几何解释</li>
-<li>矩阵乘法运算的四种理解方式<ul>
+</ul>
+<h5 id="1-矩阵四则运算"><a href="#1-矩阵四则运算" class="headerlink" title="1. 矩阵四则运算"></a>1. 矩阵四则运算</h5><h6 id="–矩阵加法"><a href="#–矩阵加法" class="headerlink" title="–矩阵加法"></a>–矩阵加法</h6><h6 id="–矩阵乘法"><a href="#–矩阵乘法" class="headerlink" title="–矩阵乘法"></a>–矩阵乘法</h6><ul>
+<li>四种理解方式<ul>
 <li>行列式基本计算（左行*右列）</li>
 <li>行变换（左参数右母本）（=&gt;行向量）</li>
 <li>列变换（左母本右参数）（=&gt;列向量）</li>
 <li>(n*p)(p*q)-&gt;n*q 拆解成个体相加</li>
 </ul>
 </li>
-<li>消元法<ul>
+</ul>
+<h6 id="–混合计算"><a href="#–混合计算" class="headerlink" title="–混合计算"></a>–混合计算</h6><ul>
+<li>乘法结合律(1+1*2)</li>
+<li>常数系数</li>
+<li>加法结合律/交换律</li>
+<li>IA=AI=A</li>
+</ul>
+<h5 id="2-消元法"><a href="#2-消元法" class="headerlink" title="2. 消元法"></a>2. 消元法</h5><ul>
 <li>gauss-Jordan solution -&gt; 多增广矩阵</li>
 <li>消元步骤分解为矩阵</li>
 <li>A=LU 分解</li>
 </ul>
-</li>
-<li>逆矩阵/置换矩阵<ul>
-<li>permutation : P^-1^=P^T^</li>
-<li>二阶矩阵方程</li>
+<h5 id="3-AX-B解法"><a href="#3-AX-B解法" class="headerlink" title="3. AX=B解法"></a>3. AX=B解法</h5><h6 id="–proprete"><a href="#–proprete" class="headerlink" title="–propreté"></a>–propreté</h6><ul>
+<li>X的所有取值不一定构成子空间</li>
+<li>X的所有取值为{随机解+零空间}</li>
+<li>X不一定有解, si et seulement si B∈A的列向量构成的子空间中 </li>
+</ul>
+<h6 id="–algorithme-la-nombre-du-rang"><a href="#–algorithme-la-nombre-du-rang" class="headerlink" title="–algorithme (la nombre du rang)"></a>–algorithme (la nombre du rang)</h6><ul>
+<li><p>rang简化阶梯矩阵的主元个数</p>
+<ul>
+<li>(n/p*m/q)</li>
+<li>(nombre du ligne/équation*nombre du Colum/inconnu)</li>
+<li>(行数*列数)</li>
 </ul>
 </li>
-<li>sous-espace<ul>
+<li><p>r=m&lt;n——&gt;infini solution</p>
+</li>
+<li>r=n&lt;m——&gt;0 solution</li>
+<li>r=n=m(inversible/déminant≠0)——&gt;1 solution</li>
+<li>简化计算的方法（det）</li>
+</ul>
+<h5 id="4-逆矩阵-置换矩阵-puissance"><a href="#4-逆矩阵-置换矩阵-puissance" class="headerlink" title="4. 逆矩阵/置换矩阵/puissance"></a>4. 逆矩阵/置换矩阵/puissance</h5><ul>
+<li>permutation : P^-1^=P^T^</li>
+<li>二阶矩阵通解</li>
+</ul>
+<h4 id="Determinants"><a href="#Determinants" class="headerlink" title="Déterminants"></a>Déterminants</h4><h5 id="–propriete-公理"><a href="#–propriete-公理" class="headerlink" title="–propriété(公理)"></a>–propriété(公理)</h5><ol>
+<li>det($I^{n}$)=1</li>
+<li>L~i~ ± k*L~j~, k∈R, det(A)=det(A’) 不变</li>
+<li>si L’i+L’’i=Li alors A’+A’’=A 只有一行变化</li>
+<li>det(A)=(-1)^n^det(P) n=行交换次数</li>
+<li>det(A)det(B)=det(AB)</li>
+<li>si L-&gt;mL alors A=mA, m∈R</li>
+<li>det(A^-1^) = – det(A)</li>
+<li>det($A^{T}$)=det(A) ——–&gt;所有变换对列向量同样适用</li>
+<li>det(A)=0&lt;—–&gt;A est inversible</li>
+</ol>
+<h5 id="–Formule-pour-calculer"><a href="#–Formule-pour-calculer" class="headerlink" title="–Formule pour calculer"></a>–Formule pour calculer</h5><h6 id="—-BIG-FORMULA"><a href="#—-BIG-FORMULA" class="headerlink" title="—-BIG FORMULA"></a>—-BIG FORMULA</h6><ul>
+<li>推导过程: 利用公理，仅改变一行———&gt;Li’+Li’’=Li-&gt;det(A’)+det(A’’)=det(A)</li>
+<li>det不为零-&gt;列与行不同时为0-&gt;A^m^m</li>
+</ul>
+<h6 id="—-Cofacteurs-代数余子式"><a href="#—-Cofacteurs-代数余子式" class="headerlink" title="—-Cofacteurs(代数余子式)"></a>—-Cofacteurs(代数余子式)</h6><ul>
+<li>( i+j) </li>
+</ul>
+<h2 id="II-Sous-espaces-vectoriels-applications-lineaires"><a href="#II-Sous-espaces-vectoriels-applications-lineaires" class="headerlink" title="II Sous-espaces vectoriels, applications linéaires"></a><strong>II Sous-espaces vectoriels, applications linéaires</strong></h2><ul>
 <li>Définition: 线性自洽<ul>
 <li>pour tout u,v∈E u+v∈E </li>
 <li>pour tout u∈E；k∈R；ku∈E </li>
@@ -223,37 +273,52 @@
 <li>Dimension3: 过原点的直线+过原点的plan+零向量</li>
 </ul>
 </li>
-<li>列空间<ul>
-<li>AX=0（零空间）<ul>
+<li>Matrice du passage EB’=B</li>
+<li>空间<ul>
+<li>AX (Im(A))<ul>
+<li>tout X est une sous-espace</li>
+<li>由列向量构成的子空间</li>
+</ul>
+</li>
+<li>AX=0 (零空间) (Ker(A))<ul>
 <li>tout X est une sous-espace</li>
 <li>preuve : A(u+v)=0/kAu=0</li>
 <li>algorithme <ul>
 <li>élimination-&gt;simplifier-&gt;back-soustraction</li>
 <li>pivot+variable free</li>
+<li>快速解出零空间BASE的方法（-F,I）</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>AX=B<ul>
-<li>X的所有取值不一定构成子空间</li>
-<li>X的所有取值为{随机解+零空间}</li>
-<li>X不一定有解, si et seulement si B∈A的列向量构成的子空间中 </li>
-<li>algorithme (la nombre du rang)<ul>
-<li>rang简化阶梯矩阵的主元个数<ul>
-<li>(m/p*n/q)</li>
-<li>(nombre du ligne/équation*nombre du Colum/inconnu)</li>
-<li>(行数*列数)</li>
+<li>A^T^X=0 </li>
+<li>A^T^X</li>
 </ul>
 </li>
-<li>r=m&lt;n——&gt;infini solution</li>
-<li>r=n&lt;m——&gt;0 solution</li>
-<li>r=n=m(inversible/déminant≠0)——&gt;1 solution</li>
+<li>(libre/liée)/(génératrice)/(canonique(|BASE|=1))<ul>
+<li>base<strong>&lt;=&gt;</strong>det(A)≠0<strong>&lt;=&gt;</strong>r=m=n<strong>&lt;=&gt;</strong>A est inversible</li>
+<li>行秩=列秩</li>
 </ul>
 </li>
+<li>DIMENSION</li>
+<li>矩阵空间+矩阵空间的运算-&gt;维度运算-&gt;向量的基</li>
+<li>秩1矩阵-&gt;积木（相乘可以构成任意矩阵）</li>
+<li>基变换<ul>
+<li>两种简易基底（博立叶变换、X变换）</li>
+<li>Matrice du passage（EB=A—&gt;E=AB^-1^）(A  à B)</li>
 </ul>
 </li>
+<li>复习列空间</li>
+<li>小世界图/图论（待复习）<ul>
+<li>矩阵-&gt;节点图-&gt;电路图</li>
+<li>由矩阵推出电路公式（基尔霍夫定律）</li>
+<li>欧拉公式 : NODE-EDGE+LOOP=1</li>
 </ul>
 </li>
+<li>Surjective/bijective/injective（满射/双射/单射）<ul>
+<li>bijective=Surjective+injective</li>
+<li>surjective : 所有定义域中的值都有相应值域的值对应——&gt;列向量构成的空间为列向量的维度——&gt;r=m(Ligne)</li>
+<li>injective：所有定义域中的值都只对应一个相应值域的值——&gt;列向量线性不相关(libre)——&gt;r=n(Colum)</li>
 </ul>
 </li>
 </ul>
