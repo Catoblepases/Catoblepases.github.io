@@ -230,7 +230,7 @@
 
         <div class="post-content">
             <h2 id="Chapitre-1-Matrices"><a href="#Chapitre-1-Matrices" class="headerlink" title="Chapitre 1 Matrices"></a>Chapitre 1 Matrices</h2><h3 id="Vocabulaire"><a href="#Vocabulaire" class="headerlink" title="Vocabulaire :"></a>Vocabulaire :</h3><p>— Une matrice avec p lignes et q colonnes est dite de taille p × q. Si p = 1, on parle de matrice ligne, si q = 1, de matrice colonne, si p = q de matrice carrée.<br>— La diagonale d’une matrice carrée est l’ensemble des coefficients a11, a22, . . . , app. — La matrice nulle de taille p × q est la matrice de taille p × q dont tous les coefficients sont nuls. On la note $0_{p,q}$ ou parfois simplement 0.<br>— La matrice identité de taille p×p est la matrice dont tous les coefficients sont nuls excepté ceux de la diagonale qui sont tous égaux à 1. On la note $Id_{p}$<br>On note $M_{p,q}$ l’ensemble des matrices avec p lignes et q colonnes.</p>
-<h4 id="1-1-1-Addition-et-multiplication-externe"><a href="#1-1-1-Addition-et-multiplication-externe" class="headerlink" title="1.1.1 Addition et multiplication externe"></a>1.1.1 Addition et multiplication externe</h4><h5 id="Enonce-indispensable-1"><a href="#Enonce-indispensable-1" class="headerlink" title="Énoncé indispensable 1 :"></a>Énoncé indispensable 1 :</h5><p>Soient A, B, C trois matrices de même taille et α, β deux réels. Alors<br>$$<br>\begin{aligned}<br>A+ B = B + A\<br>(A+ B) +C = A+ (B +C)\ A+ 0 = A\<br>α(A+ B) = αA+ αB\ (α + β)A = αA+ βA\α(βA) = (αβ)A<br>\end{aligned}<br>$$<br>où 0 est la matrice nulle de même taille que A.</p>
+<h4 id="1-1-1-Addition-et-multiplication-externe"><a href="#1-1-1-Addition-et-multiplication-externe" class="headerlink" title="1.1.1 Addition et multiplication externe"></a>1.1.1 Addition et multiplication externe</h4><h5 id="Enonce-indispensable-1"><a href="#Enonce-indispensable-1" class="headerlink" title="Énoncé indispensable 1 :"></a>Énoncé indispensable 1 :</h5><p>Soient A, B, C trois matrices de même taille et α, β deux réels. Alors<br>$$<br>\begin{align}<br>A+ B = B + A\<br>(A+ B) +C = A+ (B +C)\ A+ 0 = A\<br>α(A+ B) = αA+ αB\ (α + β)A = αA+ βA\α(βA) = (αβ)A\<br>\end{align}<br>$$<br>où 0 est la matrice nulle de même taille que A.</p>
 <h4 id="1-1-2-Produit-de-matrices"><a href="#1-1-2-Produit-de-matrices" class="headerlink" title="1.1.2 Produit de matrices"></a>1.1.2 Produit de matrices</h4><h5 id="Enonce-indispensable-2"><a href="#Enonce-indispensable-2" class="headerlink" title="Énoncé indispensable 2 :"></a>Énoncé indispensable 2 :</h5><ol>
 <li><p>Le produit AB est défini lorsque le nombre de colonnes de A est égal au nombre de lignes de B.</p>
 </li>
@@ -241,7 +241,7 @@
 <li><p>Le produit d’une matrice ligne par une matrice colonne est donné par la formule</p>
 </li>
 </ol>
-<p>$$<br>\begin{array}((a1\ a2\ ……ap)\end{array}\left(\begin{array}{c}b1\b2\…\…\bp\end{array}\right)=\left(a1b1\ a2b2\ ……apbp\right)∈ M11<br>$$</p>
+<p>$$<br>\begin{matrix}((a1\ a2\ ……ap)\end{matrix}\left(\begin{matrix}b1\b2\…\…\bp\end{matrix}\right)=\left(a1b1\ a2b2\ ……apbp\right)∈ M11<br>$$</p>
 <h5 id="Enonce-indispensable-3"><a href="#Enonce-indispensable-3" class="headerlink" title="Énoncé indispensable 3 :"></a>Énoncé indispensable 3 :</h5><p>Soient p, q, r et s des entiers positifs non nuls. </p>
 <ol>
 <li>si A ∈ $M_{p,q}$, B ∈ $M_{q,r}$ et C ∈ Mr,s, alors (AB)C = A(BC). </li>
@@ -254,7 +254,7 @@
 <h5 id="Enonce-indispensable-5"><a href="#Enonce-indispensable-5" class="headerlink" title="Énoncé indispensable 5 :"></a>Énoncé indispensable 5 :</h5><p>proposition 1.7. Soient A et B deux matrices inversibles de même taille. Alors — A^−1^ est inversible, son inverse est A. AB est inversible, son inverse est B^−1^A^−1^.</p>
 <h5 id="Enonce-indispensable-6"><a href="#Enonce-indispensable-6" class="headerlink" title="Énoncé indispensable 6 :"></a>Énoncé indispensable 6 :</h5><p>proposition 1.9. Pour toute matrice carrée A et entiers positifs n, p, nous avons </p>
 <p>$A^{n}A^{p} = A^{p+n} et (A^{n})^{p} = A^{np}$.<br>Si A est inversible, ces deux formules sont vraies pour des entiers n et p de signe quelconque.</p>
-<h5 id="Enonce-indispensable-7"><a href="#Enonce-indispensable-7" class="headerlink" title="Énoncé indispensable 7 :"></a>Énoncé indispensable 7 :</h5><p>Un système linéaire à p équations et q inconnues x1, . . . , xq est un ensemble d’équations de la forme<br>$$<br>(S)=\begin{cases}<br>a11x1 + a12x2 + . . . + a1qxq = b1\ a21x1 + a22x2 + . . . + a2qxq = b2\ …\<br>ap1x1 + ap2x2 + . . . + apqxq = bp\end{cases}<br>$$<br>Les nombres réels aij sont les coefficients du système linéaire, et les bj sont les coefficients du second membre. Les solutions du système sont les q-uplets (x1, . . . , xq) de nombres réels qui vérifient toutes les équations du système.</p>
+<h5 id="Enonce-indispensable-7"><a href="#Enonce-indispensable-7" class="headerlink" title="Énoncé indispensable 7 :"></a>Énoncé indispensable 7 :</h5><p>Un système linéaire à p équations et q inconnues x1, . . . , xq est un ensemble d’équations de la forme<br>$$<br>(S)=\begin{cases}<br>a11x1 + a12x2 + . . . + a1qxq = b1\ a21x1 + a22x2 + . . . + a2qxq = b2\ …\<br>ap1x1 + ap2x2 + . . . + apqxq = bp\<br>\end{cases}<br>$$<br>Les nombres réels aij sont les coefficients du système linéaire, et les bj sont les coefficients du second membre. Les solutions du système sont les q-uplets (x1, . . . , xq) de nombres réels qui vérifient toutes les équations du système.</p>
 <h5 id="Enonce-indispensable-8"><a href="#Enonce-indispensable-8" class="headerlink" title="Énoncé indispensable 8 :"></a>Énoncé indispensable 8 :</h5><p>proposition 1.10. SA est stable par somme et par multiplication externe par tout scalaire, c’est-à-dire que $pour\ tout\ X, Y ∈ SA et\ tout\ λ ∈ R, X+Y ∈ SA\ et\ λX ∈ SA.$</p>
 <h5 id="Enonce-indispensable-9"><a href="#Enonce-indispensable-9" class="headerlink" title="Énoncé indispensable 9 :"></a>Énoncé indispensable 9 :</h5><p>proposition 1.12. (cas spécial d’une matrice inversible) Supposons que A soit une matrice carrée inversible. Alors le système linéaire $AX = B$ possède une solution unique, à savoir $X_{0} = A^{−1}B$.</p>
 <h4 id="1-2-1-Systeme-triangulaires-et-echelonnes"><a href="#1-2-1-Systeme-triangulaires-et-echelonnes" class="headerlink" title="1.2.1 Système triangulaires et échelonnés"></a>1.2.1 Système triangulaires et échelonnés</h4><h5 id="Enonce-indispensable-10"><a href="#Enonce-indispensable-10" class="headerlink" title="Énoncé indispensable 10 :"></a>Énoncé indispensable 10 :</h5><p>proposition 1.14. Soit le système $AX = B$ avec A une matrice triangulaire. Supposons que tous les coefficients de la diagonale de A sont non-nuls. Alors le système a une unique solution.</p>
@@ -299,12 +299,12 @@
 <li>A est inversible ssi son déterminant est non-nul. </li>
 <li>Lorsque A est inversible,</li>
 </ol>
-<p>$$<br>A^{−1} = \frac{1}{det(A)}\left(\begin{array}{cc}d\ -b\-c\ \ \ \ a\end{array}\right)<br>$$</p>
+<p>$$<br>A^{−1} = \frac{1}{det(A)}\left(\begin{matrix}{cc}d\ -b\-c\ \ \ \ a\end{matrix}\right)<br>$$</p>
 <ol start="3">
 <li>Si B est une autre matrice 2 × 2, $det(AB) = (det A)(det B)$<br>et lorsque A est inversible $det(A^{−1}) = (det^A)−1$.</li>
-<li>Si A est inversible, la solution de A$\left(\begin{array}{a}x\y\end{array}\right)$=$\left(\begin{array}{a}f\g\end{array}\right)$est</li>
+<li>Si A est inversible, la solution de A$\left(\begin{matrix}{a}x\y\end{matrix}\right)$=$\left(\begin{matrix}{a}f\g\end{matrix}\right)$est</li>
 </ol>
-<p>$$<br>x=\frac{det\left(\begin{array}{cc}f\ \ b\g\ \ d\end{array}\right)}{det(A)},\ y=\frac{det\left(\begin{array}{cc}a\ \ f\c\ \ g\end{array}\right)}{det(A)}<br>$$</p>
+<p>$$<br>x=\frac{det\left(\begin{matrix}f\ \ b\g\ \ d\end{matrix}\right)}{det(A)},\ y=\frac{det\left(\begin{matrix}a\ \ f\c\ \ g\end{matrix}\right)}{det(A)}<br>$$</p>
 <h4 id="1-3-2-Determinant-d’une-matrice-n-×-n"><a href="#1-3-2-Determinant-d’une-matrice-n-×-n" class="headerlink" title="1.3.2 Déterminant d’une matrice n × n"></a>1.3.2 Déterminant d’une matrice n × n</h4><h4 id="1-3-3-Reduction-de-Gauss"><a href="#1-3-3-Reduction-de-Gauss" class="headerlink" title="1.3.3 Réduction de Gauss"></a>1.3.3 Réduction de Gauss</h4><h5 id="Enonce-indispensable-22-23"><a href="#Enonce-indispensable-22-23" class="headerlink" title="Énoncé indispensable 22 +23:"></a>Énoncé indispensable 22 +23:</h5><p>théorème 1.34. Il existe une unique application det : Mn → R, appelée déterminant, qui vérifie les propriétés suivantes : 1. Permutation : si on échange deux lignes d’une matrice, son déterminant est multiplié par −1.</p>
 <ol start="2">
 <li><strong><em>Dilatation</em></strong> : si on multiplie une ligne d’une matrice par un réel λ, son déterminant est multiplié par λ.</li>
@@ -340,7 +340,7 @@
 </ol>
 <h5 id="Enonce-indispensable-33"><a href="#Enonce-indispensable-33" class="headerlink" title="Énoncé indispensable 33 :"></a>Énoncé indispensable 33 :</h5><p>proposition 2.6. Si (v1, . . . , vp) est une base de Rn, alors pour tout u ∈ Rn, il existe un unique p-uplets de réels λ1, . . . , λp tels que<br>u = λ1v1 + · · · + λpvp . On appelle (λ1, . . . , λp) les coordonnées de u dans la base (v1, . . . , vp).</p>
 <h5 id="Enonce-indispensable-34"><a href="#Enonce-indispensable-34" class="headerlink" title="Énoncé indispensable 34 :"></a>Énoncé indispensable 34 :</h5><p> Soit A la matrice de taille n × p dont les colonnes sont les vecteurs v1, . . . , vp.</p>
-<p>Alors pour tout vecteur u u = λ1v1 + . . . + λpvp ⇔$A\left(\begin{array}{a}m1\m2\m3\…\…\mp\end{array}\right)$</p>
+<p>Alors pour tout vecteur u u = λ1v1 + . . . + λpvp ⇔$A\left(\begin{matrix}m1\m2\m3\…\…\mp\end{matrix}\right)$</p>
 <h5 id="Enonce-indispensable-35"><a href="#Enonce-indispensable-35" class="headerlink" title="Énoncé indispensable 35 :"></a>Énoncé indispensable 35 :</h5><p>théorème 2.7. Si A est la matrice de vecteurs colonnes v1, . . . , vp, alors </p>
 <ol>
 <li>(v1, . . . , vp) est libre si et seulement si A est de rang p </li>
