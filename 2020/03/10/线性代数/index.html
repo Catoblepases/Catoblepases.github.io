@@ -13,7 +13,7 @@
 
 
 
-<title>Hexo</title>
+<title>线性代数 | Hexo</title>
 
 
 
@@ -109,34 +109,155 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title"></h1>
+            <h1 class="post-title">线性代数</h1>
             
                 <div class="post-meta">
                     
 
                     
                         <span class="post-time">
-                        Date: <a href="#">May 22, 2019&nbsp;&nbsp;21:45:48</a>
+                        Date: <a href="#">March 10, 2020&nbsp;&nbsp;0:08:16</a>
                         </span>
                     
-                    
-                        <span class="post-category">
-                    Category:
-                            
-                                <a href="/categories/情绪垃圾/">情绪垃圾</a>
-                            
-                        </span>
                     
                 </div>
             
         </header>
 
         <div class="post-content">
-            
+            <h3 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h3><ul>
+<li>线性代数的几何解释</li>
+<li>矩阵乘法运算的四种理解方式<ul>
+<li>行列式基本计算（左行*右列）</li>
+<li>行变换（左参数右母本）（=&gt;行向量）</li>
+<li>列变换（左母本右参数）（=&gt;列向量）</li>
+<li>(n*p)(p*q)-&gt;n*q 拆解成个体相加</li>
+</ul>
+</li>
+<li>消元法<ul>
+<li>gauss-Jordan solution -&gt; 多增广矩阵</li>
+<li>消元步骤分解为矩阵</li>
+<li>A=LU 分解</li>
+</ul>
+</li>
+<li>逆矩阵/置换矩阵<ul>
+<li>permutation : P^-1^=P^T^</li>
+<li>二阶矩阵方程</li>
+</ul>
+</li>
+<li>sous-espace<ul>
+<li>Définition: 线性自洽<ul>
+<li>pour tout u,v∈E u+v∈E </li>
+<li>pour tout u∈E；k∈R；ku∈E </li>
+<li>子空间为母空间中线性自洽的空间</li>
+</ul>
+</li>
+<li>Example<ul>
+<li>Dimension2: 过原点的直线+零向量</li>
+<li>Dimension3: 过原点的直线+过原点的plan+零向量</li>
+</ul>
+</li>
+<li>列空间<ul>
+<li>AX=0（零空间）<ul>
+<li>tout X est une sous-espace</li>
+<li>preuve : A(u+v)=0/kAu=0</li>
+<li>algorithme <ul>
+<li>élimination-&gt;simplifier-&gt;back-soustraction</li>
+<li>pivot+variable free</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>AX=B<ul>
+<li>X的所有取值不一定构成子空间</li>
+<li>X的所有取值为{随机解+零空间}</li>
+<li>X不一定有解, si et seulement si B∈A的列向量构成的子空间中 </li>
+<li>algorithme (la nombre du rang)<ul>
+<li>rang简化阶梯矩阵的主元个数<ul>
+<li>(m/p*n/q)</li>
+<li>(nombre du ligne/équation*nombre du Colum/inconnu)</li>
+<li>(行数*列数)</li>
+</ul>
+</li>
+<li>r=m&lt;n——&gt;infini solution</li>
+<li>r=n&lt;m——&gt;0 solution</li>
+<li>r=n=m(inversible/déminant≠0)——&gt;1 solution</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
         </div>
 
         
@@ -155,10 +276,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2019/05/22/Vocabulaire-loisir/">Vocabulaire loisir</a>
             
-            
-            <a class="next" rel="next" href="/2019/05/22/情绪垃圾/布鲁塞尔/">布鲁塞尔</a>
+            <a class="next" rel="next" href="/2020/03/10/Matrice/">MATRICE</a>
             
         </section>
 
