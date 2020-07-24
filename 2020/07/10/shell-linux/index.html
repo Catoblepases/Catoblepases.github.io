@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="John Doe">
+
+
+
+    <meta name="description" content="Undergraduate Student . <br>**每 天 生 产 一 吨 垃 圾** .">
+
+
+
+<title>shell_linux | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Catoblepases&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Catoblepases&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">shell_linux</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 10, 2020&nbsp;&nbsp;0:51:07</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">string="123" #变量名 1.英文+数字+下划线 2.开头不能用数字 </span><br><span class="line">val=123</span><br><span class="line">echo $val #qoat</span><br><span class="line">len=$&#123;#string&#125; #字符串长度</span><br><span class="line">indice=$&#123;string:1:4&#125; #从第二个[字符]开始截取[四个]字符</span><br><span class="line">echo `expr index "$string" io` #search i[or]o (first)</span><br><span class="line">unset string #取消设置</span><br><span class="line">readonly string #只读</span><br></pre></td></tr></table></figure>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">chain=(val1 val2 val3) or </span><br><span class="line">chain=(</span><br><span class="line">    val1</span><br><span class="line">    val2</span><br><span class="line">    val3</span><br><span class="line">)</span><br><span class="line">len=$&#123;#chain[*]&#125; or $&#123;#chain[@]&#125; #全部元素个数</span><br></pre></td></tr></table></figure>
+<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>test number -eq -ne -gt -ge -lt -le (equal big small than)</span><br><span class="line">val1=0 #等号两边不能有空格</span><br><span class="line">val2=1</span><br><span class="line">if test $val1 -eq $val2</span><br><span class="line">	echo "equal"</span><br><span class="line">fi</span><br><span class="line"><span class="meta">#</span>test string -z -n = != (attention it's = but not ==)</span><br><span class="line">if test $string -z</span><br><span class="line">	echo "len(s)=0"</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th></th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-e 文件名</td>
+<td>exist</td>
+<td>如果文件存在则为真</td>
+</tr>
+<tr>
+<td>-r 文件名</td>
+<td>read</td>
+<td>如果文件存在且可读则为真</td>
+</tr>
+<tr>
+<td>-w 文件名</td>
+<td>write</td>
+<td>如果文件存在且可写则为真</td>
+</tr>
+<tr>
+<td>-x 文件名</td>
+<td>excution</td>
+<td>如果文件存在且可执行则为真</td>
+</tr>
+<tr>
+<td>-s 文件名</td>
+<td>string</td>
+<td>如果文件存在且至少有一个字符则为真</td>
+</tr>
+<tr>
+<td>-d 文件名</td>
+<td>dir</td>
+<td>如果文件存在且为目录则为真</td>
+</tr>
+<tr>
+<td>-f 文件名</td>
+<td>file（normal）</td>
+<td>如果文件存在且为普通文件则为真</td>
+</tr>
+<tr>
+<td>-c 文件名</td>
+<td>character</td>
+<td>如果文件存在且为字符型特殊文件则为真</td>
+</tr>
+<tr>
+<td>-b 文件名</td>
+<td>block</td>
+<td>如果文件存在且为块特殊文件则为真</td>
+</tr>
+</tbody>
+</table>
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>for</span><br><span class="line">for i in 1 2 3 4</span><br><span class="line">do</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>while</span><br><span class="line">while condition</span><br><span class="line">do</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>if</span><br><span class="line">if</span><br><span class="line">else</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>case</span><br><span class="line">case $num in</span><br><span class="line">	1) command</span><br><span class="line">	;;</span><br><span class="line">	2) command</span><br><span class="line">	;;</span><br><span class="line">	3|4|5) command</span><br><span class="line">	;;</span><br><span class="line">esac</span><br></pre></td></tr></table></figure>
+<h3 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>command &gt; file</td>
+<td>将输出重定向到 file。</td>
+</tr>
+<tr>
+<td>command &lt; file</td>
+<td>将输入重定向到 file。</td>
+</tr>
+<tr>
+<td>command &gt;&gt; file</td>
+<td>将输出以追加的方式重定向到 file。</td>
+</tr>
+<tr>
+<td>n &gt; file</td>
+<td>将文件描述符为 n 的文件重定向到 file。</td>
+</tr>
+<tr>
+<td>n &gt;&gt; file</td>
+<td>将文件描述符为 n 的文件以追加的方式重定向到 file。</td>
+</tr>
+<tr>
+<td>n &gt;&amp; m</td>
+<td>将输出文件 m 和 n 合并。</td>
+</tr>
+<tr>
+<td>n &lt;&amp; m</td>
+<td>将输入文件 m 和 n 合并。</td>
+</tr>
+<tr>
+<td>&lt;&lt; tag</td>
+<td>将开始标记 tag 和结束标记 tag 之间的内容作为输入。</td>
+</tr>
+<tr>
+<td>wc -l</td>
+<td>读取行数</td>
+</tr>
+<tr>
+<td>/dev/null</td>
+</tr>
+</tbody>
+</table>
+<h4 id="重定向深入讲解"><a href="#重定向深入讲解" class="headerlink" title="重定向深入讲解"></a>重定向深入讲解</h4><p>一般情况下，每个 Unix/Linux 命令运行时都会打开三个文件：</p>
+<ul>
+<li>标准输入文件(stdin)：stdin的文件描述符为0，Unix程序默认从stdin读取数据。</li>
+<li>标准输出文件(stdout)：stdout 的文件描述符为1，Unix程序默认向stdout输出数据。</li>
+<li>标准错误文件(stderr)：stderr的文件描述符为2，Unix程序会向stderr流中写入错误信息。</li>
+</ul>
+<h4 id="输出重定向"><a href="#输出重定向" class="headerlink" title="输出重定向"></a>输出重定向</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">echo "123" &gt; file</span><br><span class="line">echo "123" &gt;&gt; file</span><br><span class="line">command 1 &lt; file</span><br><span class="line">command 1 &lt;file1 &gt; file2</span><br><span class="line">command &gt; file 1&gt;&amp;2</span><br></pre></td></tr></table></figure>
+<h4 id="dev-null-文件"><a href="#dev-null-文件" class="headerlink" title="/dev/null 文件"></a>/dev/null 文件</h4><p>如果希望执行某个命令，但又不希望在屏幕上显示输出结果，那么可以将输出重定向到 /dev/null：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ command &gt; /dev/null</span><br></pre></td></tr></table></figure>
+<p>/dev/null 是一个特殊的文件，写入到它的内容都会被丢弃；如果尝试从该文件读取内容，那么什么也读不到。但是 /dev/null 文件非常有用，将命令的输出重定向到它，会起到”禁止输出”的效果。</p>
+<p>如果希望屏蔽 stdout 和 stderr，可以这样写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ command &gt; /dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>注释</span><br><span class="line"></span><br><span class="line">:&lt;&lt;EOF</span><br><span class="line">注释</span><br><span class="line">EOF</span><br><span class="line"><span class="meta">#</span>EOF可替换为其他字符</span><br></pre></td></tr></table></figure>
+<h3 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数"></a>传递参数</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">./test first second</span><br><span class="line">echo filename:$0 #./test</span><br><span class="line">echo filename:$1 #first</span><br><span class="line">echo filename:$2 #second</span><br></pre></td></tr></table></figure>
+<h3 id="Shell-文件包含"><a href="#Shell-文件包含" class="headerlink" title="Shell 文件包含"></a>Shell 文件包含</h3><p>和其他语言一样，Shell 也可以包含外部脚本。这样可以很方便的封装一些公用的代码作为一个独立的文件。</p>
+<p>Shell 文件包含的语法格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">. filename   # 注意点号(.)和文件名中间有一空格</span><br><span class="line"></span><br><span class="line">或</span><br><span class="line"></span><br><span class="line">source filename</span><br></pre></td></tr></table></figure>
+<h3 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h3><p><code>rm</code></p>
+<p><code>mkdir</code></p>
+<p><code>cp</code>    <code>cp file dir/filename</code></p>
+<p><code>cat</code>    <code>less</code>    <code>more</code></p>
+<p><code>mv</code></p>
+<p><code>echo</code></p>
+<p><code>chmod+x</code>     赋予可执行权限</p>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><h4 id="匹配应用"><a href="#匹配应用" class="headerlink" title="匹配应用"></a>匹配应用</h4><p>#：表示从左边算起第一个<br>%：表示从右边算起第一个</p>
+<p>##：表示从左边算起最后一个<br>%%：表示从右边算起最后一个</p>
+<p>注：var是待处理的字符串</p>
+<p>删除从右边数最后一个.右边的字符（含.）<br><code>${var%%.}</code><br>删除从右边数第一个.右边的字符（含.）<br><code>${var%.}</code><br>删除从左边最后一个.的左边的字符（含.）<br><code>${var##.}</code><br>删除从左边第一个.的左边的字符（含.）<br><code>${var#.}</code></p>
+<p>提取 目录<br><code>${var%/}</code><br>提取文件名<br><code>${var##/}</code></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/07/10/Leetcode-Algorithms/">Leetcode: Algorithms</a>
+            
+            
+            <a class="next" rel="next" href="/2020/03/10/线性代数/">线性代数</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
