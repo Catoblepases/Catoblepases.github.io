@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="John Doe">
+
+
+
+    <meta name="description" content="Undergraduate Student . <br>**每 天 生 产 一 吨 垃 圾** .">
+
+
+
+<title>wait...info | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Catoblepases&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Catoblepases&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">wait...info</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 30, 2020&nbsp;&nbsp;16:13:08</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="信息部分"><a href="#信息部分" class="headerlink" title="信息部分"></a>信息部分</h3><ol>
+<li><h4 id="关于物理的部分。"><a href="#关于物理的部分。" class="headerlink" title="关于物理的部分。"></a>关于物理的部分。</h4></li>
+</ol>
+<p>我本身喜欢物理，但这个喜欢也只是从高二下对生活渐渐有一个清晰的概念才开始的，一方面是觉得物理很有意思，可以带给我意义感；一方面是高中包括大学物理的课程目前为止学得都还不错，也轻松。</p>
+<p>认为物理有趣，其一，因为物理是量化客观世界的一种方式，给我提供了诠释现象、建构模型的工具，解答对客观世界产生的问题，对人生意义问题的淡化有一定的帮助；其二，大概只是从比较底层的物理，思考和数学模型构建中，让我获取了一定的成就感，同时，了解物理的理论框架以非线性的方式慢慢构建的过程，也让我感到很有意思；其三，因为向上开始物理渐渐变得比较困难，挖掘概念推公式的过程也让我觉得有趣；其四是科研，虽然没有具体参与过科研，仅仅是看了一些科研的课题，侧面了解到科研环境并不理想，课题很多是琐碎的，大量的重复劳动调代码，但也还是挺感兴趣，也很可能只是庸俗所致：觉得科研可以拓宽人类的智识边际，部分现在不可知的方向可能会对未来科技以及提高生产力有一定的/较为直接的助力作用，觉得科研比较符合感官预期，能够满足意义感和自我实现需求。</p>
+<p>我目前预习了大二的内容，普通物理学完，四大力学只学了浅层。目前在读电动力学、顾樵老师的数学物理方法，同时在coursera上学习热力学和统计物理的课程。</p>
+<p>大致来说，我认为我能够学习物理，但很难达到顶尖水平。一方面，我无法在第一次学习时就非常清晰地掌握概念的全部，常常会在理论框架初步构建的时候才会对细节有更加直观的理解。另一方面，在不涉及必要任务，类似小组projet、课程的时候，我学物理注意力的持续集中时间在一小时到三小时之间，同时，我也不仅仅只有物理一个兴趣，不能总是连续一整天单纯钻研物理，很难做到三天看完整本专业书。</p>
+<p>学习物理更多是希望可以完善对世界的诠释体系，能够做出了解现象产生的原因从而进一步发现问题的循环，很喜欢把细碎的东西拼接的过程。而并没有特别想在该领域做出什么对人类有绝对意义的成就。</p>
+<ol start="2">
+<li><h4 id="关于计算机和数学的部分"><a href="#关于计算机和数学的部分" class="headerlink" title="关于计算机和数学的部分"></a>关于计算机和数学的部分</h4></li>
+</ol>
+<p>其实我感兴趣的方向比较多，主要在哲学、物理和天文、生物和医药、社会学、心理学、计算机中。</p>
+<p>考虑计算机，其一是考虑就业问题，计算机和数学是比较容易就业的专业，尽管这些职业许多也并不理想，但至少无论走到哪一步都有退路，反之物理似乎没有对口的中间职位（除培训教师），容错率较低（譬如家庭出现变故），被学术界淘汰转工业界就需要转行投入大量时间成本，不一定能够与原来行业内的人竞争，也同时会面临行业内部的问题。</p>
+<p>其二是对计算机比较感兴趣，我从初中开始接触编程，当时主要是在做游戏，写一些简单的rpg游戏脚本(Ruby)，高中因为是寄宿学校所以没有再深入学习，大学修了C语言和python的课，还算擅长。同时因为学习制作一些游戏模组的原因，学过一些C#。总之对编程并不排斥也可以从编程中感觉愉快。</p>
+<p>其三是计算机也有科研的机会，可以参与一些交叉学科或者计算机本身的课题。</p>
+<ol start="3">
+<li><h4 id="困惑"><a href="#困惑" class="headerlink" title="困惑"></a>困惑</h4></li>
+</ol>
+<p>从本校确定录取物理之后的半个月，在网上寻找了美国和中国物理/天文毕业生的统计数据、在学术界的情况，也收集了许多在读或者曾经在读的物理博士发表的信息，这方面可能也会有一些幸存者偏差，能够专注学术的可能就不会在互联网上发表太多相关言论。目前，我寻找的信息大多是负面的，特别是在我感兴趣的方向，譬如统计物理、天文。至少“基础学科找到学术界的工作”这一结果大多是持久的兴趣激励、努力、天赋、交际链和运气共同作用的结果。</p>
+<p>我尽管对物理有许多偏爱，但也谈不上非常重的执念。我目前对物理的主要困惑在于”在目前看来，即使做到人力的极限依然有有极大的可能性未来无法从事学术界与物理相关的职业的情况下，我还是不是要坚持读最感兴趣的物理“这个问题。</p>
+<p>我对物理的规划有两种，第一种是能读到哪里算哪里，被淘汰（申不到博士funding、博士后、潜在永久教职）之后转行；第二种是学习计算机和数学，课余学习物理（我申请的学校也可以修物理的课程），如果最后实在无法舍弃物理到硕士阶段再申请物理的硕士，不知道可不可行。</p>
+<p>产生迷茫、犹豫、不知所措的情绪也是考虑到试错成本的问题。一来是经济问题，我的家庭经济算不上好；二来是沉没的时间成本和情绪问题，投入的时间成本越多，放弃的时候就越困难越痛苦。</p>
+<p>许多人传达给我这样的讯息: 未来无法预判，包括自身想法与环境，且决策能力与视野会不断增强与扩大，所以尽量考虑当前感受，专注当下。我也觉得很有感触，希望在早期就决定好未来方向是理想但并不现实的愚蠢想法，但还是无法避免这些情绪，所以还会去收集许多信息，对这些信息做出不成熟的分析和诠释。</p>
+<p>在英语国家/中国物理本科或许就可以区分出适合与不适合科研的人，不适合可以转行，可以申请其他领域的硕士或者博士项目，但是在欧洲特别是在法国，对学科相关性的要求比较高，物理最多可以申请和物理相关性较大的方向，工科较多类似电子、机械，这些都是目前我比较排斥、也或许不够擅长的方向。对我来说，这或许也增加了沉没成本。</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2020/07/24/wait/">wait......</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
